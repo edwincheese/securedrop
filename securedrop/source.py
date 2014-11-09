@@ -48,7 +48,14 @@ app.jinja_env.filters['nl2br'] = evalcontextfilter(template_filters.nl2br)
 
 @babel.localeselector
 def get_locale():
-    return "zh"
+    locale = session.get("locale")
+    try:
+        if locale and locale in config.LOCALES.keys():
+            return locale
+        return request.accept_languages.best_match(config.LOCALES.keys())
+    except AttributeError:
+        app.logger.warning("LOCALES is not defined in config")
+        return None
 
 @app.teardown_appcontext
 def shutdown_session(exception=None):
@@ -114,6 +121,23 @@ def check_tor2web():
               '<a href="/tor2web-warning">Why is this dangerous?</a>',
               "banner-warning")
 
+
+@app.before_request
+@ignore_static
+def set_locale():
+    try:
+        locale = request.args['l']
+        if locale in config.LOCALES.keys():
+            session['locale'] = locale
+        elif len(locale) == 0:
+            del session['locale']
+    except AttributeError:
+        pass
+    except KeyError:
+        pass
+    # Save the resolved locale in g for templates
+    g.resolved_locale = get_locale()
+    g.locales = config.LOCALES
 
 @app.route('/')
 def index():
