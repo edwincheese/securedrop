@@ -1,0 +1,16 @@
+{{ config.LOCALES }}
+{% if g.locales.keys()|length > 1 %}
+<div class="locales">
+  <ul class="plain">
+    {% for locale in g.locales %}
+      <li>
+      {% if locale == g.resolved_locale %}
+        {{ g.locales[locale] }}
+      {% else %}
+        <a href="?l={{ locale }}">{{ g.locales[locale] }}</a>
+      {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
