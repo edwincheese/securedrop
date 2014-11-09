@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-08 23:21+0000\n"
+"POT-Creation-Date: 2014-11-09 18:10+0000\n"
 "PO-Revision-Date: 2014-11-09 00:01+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh <LL@li.org>\n"
@@ -17,6 +17,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: source_templates/index.html:13
+#: /vagrant/securedrop/source_templates/index.html:13
 msgid "We recommend disabling JavaScript to protect your anonymity:"
-msgstr "我們建議你關閉 JavaScript"
+msgstr "為保護您的身分安全，我們強烈建議您關閉瀏覽器的 JavaScript 功能："
+
+#: /vagrant/securedrop/source_templates/index.html:13
+#, python-format
+msgid " %(howto_disable_js)s, or ignore this warning to continue."
+msgstr "%(howto_disable_js)s，或略過這個提示繼續。"
+
+#: /vagrant/securedrop/source_templates/index.html:13
+msgid "Learn how to disable it"
+msgstr "關閉 JavaScript"
+
+#: /vagrant/securedrop/source_templates/index.html:31
+msgid "Submit documents for the first time"
+msgstr "第一次提交文件"
+
+#: /vagrant/securedrop/source_templates/index.html:34
+msgid ""
+"If this is your first time submitting documents to journalists, start "
+"here."
+msgstr "第一次提交文件給記者，從這裡開始。"
+
+#: /vagrant/securedrop/source_templates/index.html:36
+msgid "Submit Documents"
+msgstr "提交文件"
+
+#: /vagrant/securedrop/source_templates/index.html:40
+msgid "Already submitted something?"
+msgstr "跟進已提交的文件？"
+
+#: /vagrant/securedrop/source_templates/index.html:43
+msgid ""
+"If you have already submitted documents in the past, log in here to check"
+" for responses."
+msgstr "如果你已提交過文件，你可以登入查閱回覆。"
+
+#: /vagrant/securedrop/source_templates/index.html:45
+msgid "Check for a response"
+msgstr "查閱回覆"
+
+#: /vagrant/securedrop/source_templates/index.html:50
+#, python-format
+msgid ""
+"Like all software, SecureDrop may contain security bugs. Use at your own "
+"risk. Powered by SecureDrop %(version)s."
+msgstr "如所有軟件一樣，SecureDrop 可能存在安全漏洞。敬請注意使用風險。由 SecureDrop %(version)s 提供。"
+
+#: /vagrant/securedrop/source_templates/index.html:58
+msgid ""
+"You appear to be using the Tor Browser. You can disable Javascript in 3 "
+"easy steps!"
+msgstr "你看來正在使用 Tor Browser。只需要三個簡單步驟即可關閉 JavaScript！"
+
+#: /vagrant/securedrop/source_templates/index.html:60
+#, python-format
+msgid "Click %(img)s NoScript icon in the toolbar above"
+msgstr "按瀏覽器工具欄的 %(img)s NoScript 標誌"
+
+#: /vagrant/securedrop/source_templates/index.html:61
+#, python-format
+msgid "Click %(forbid_scripts_globally)s"
+msgstr "按 %(forbid_scripts_globally)s"
+
+#: /vagrant/securedrop/source_templates/index.html:61
+#, fuzzy
+msgid "Forbid Scripts Globally (advised)"
+msgstr "Forbid Scripts Globally (advised)"
+
+#: /vagrant/securedrop/source_templates/index.html:62
+#, python-format
+msgid ""
+"If the page does not refresh automatically, %(click_here)s to refresh the"
+" page"
+msgstr "如果網頁沒有重新載入，%(click_here)s重新載入。"
+
+#: /vagrant/securedrop/source_templates/index.html:62
+msgid "click here"
+msgstr "按這裡"
+
+#: /vagrant/securedrop/source_templates/index.html:64
+msgid "Not using the Tor Browser Bundle?"
+msgstr "並非使用 Tor Browser？"
+
