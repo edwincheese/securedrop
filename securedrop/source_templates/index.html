@@ -10,7 +10,7 @@
     <script type="text/javascript" src="/static/js/source.js"></script>
   </head>
   <body>
-    <div class="warning"><strong>{{ _("We recommend disabling JavaScript to protect your anonymity:") }}</strong> <a id="disable-js" href="/howto-disable-js">{{ _("Learn how to disable it") }}</a>, {{_("or ignore this warning to continue.")}} <i id="warning-close" class="fa fa-times"></i></div>
+    <div class="warning"><strong>{{_("We recommend disabling JavaScript to protect your anonymity:")}}</strong>{{_(" %(howto_disable_js)s, or ignore this warning to continue.", howto_disable_js="<a id=\"disable-js\" href=\"/howto-disable-js\">%s</a>"|safe % _("Learn how to disable it"))}} <i id="warning-close" class="fa fa-times"></i></div>
 
     {% include 'banner_warning_flashed.html' %}
 
@@ -28,26 +28,26 @@
 
         <div class="grid-item option alt">
           <h2>
-            Submit documents for the first time
+            {{_("Submit documents for the first time")}}
           </h2>
           <hr class="cut-out" />
           <p>{{_("If this is your first time submitting documents to journalists, start here.")}}</p>
           <hr class="no-line" />
-          <a href="/generate" class="btn alt block pull-bottom" id="submit-documents-button"><i class="fa fa-cloud-upload"></i> Submit Documents</a>
+          <a href="/generate" class="btn alt block pull-bottom" id="submit-documents-button"><i class="fa fa-cloud-upload"></i> {{_("Submit Documents")}}</a>
         </div>
         <div class="grid-item option">
           <h2>
-            Already submitted something?
+            {{_("Already submitted something?")}}
           </h2>
           <hr class="cut-out" />
           <p>{{_("If you have already submitted documents in the past, log in here to check for responses.")}}</p>
           <hr class="no-line" />
-          <a href="/login" class="btn block pull-bottom"><i class="fa fa-comments"></i> {{_("Check for a response"}}</a>
+          <a href="/login" class="btn block pull-bottom"><i class="fa fa-comments"></i> {{_("Check for a response")}}</a>
         </div>
       </div>
 
       <footer>
-        {{_("Like all software, SecureDrop may contain security bugs. Use at your own risk.")}} Powered by SecureDrop {{ version }}.
+        {{_("Like all software, SecureDrop may contain security bugs. Use at your own risk. Powered by SecureDrop %(version)s.", version=version)}}
       </footer>
     </div>
 
@@ -57,9 +57,9 @@
     <div class="bubble">
       <p>{{_("You appear to be using the Tor Browser. You can disable Javascript in 3 easy steps!")}}</p>
       <ol>
-        <li>Click <img src="static/i/no16.png"> {{_("NoScript icon in the toolbar above")}}</li>
-        <li>Click <strong><img src="static/i/no16-global.png"/> Forbid Scripts Globally (advised)</strong></li>
-        <li>{{_("If the page does not refresh automatically, <a href="/">click here</a> to refresh the page")}}</li>
+        <li>{{_("Click %(img)s NoScript icon in the toolbar above", img="<img src=\"static/i/no16.png\">"|safe)}}</li>
+        <li>{{_("Click %(forbid_scripts_globally)s", forbid_scripts_globally="<strong><img src=\"static/i/no16-global.png\"/> %s</strong>"|safe % _("Forbid Scripts Globally (advised)"))}}</li>
+        <li>{{_("If the page does not refresh automatically, %(click_here)s to refresh the page", click_here="<a href=\"/\">%s</a>"|safe % _("click here"))}}</li>
       </ol>
       <p><a href="/howto-disable-js">{{_("Not using the Tor Browser Bundle?")}}</a></p>
     </div>
