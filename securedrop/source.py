@@ -6,6 +6,7 @@ from functools import wraps
 import zipfile
 from cStringIO import StringIO
 import subprocess
+from flask.ext.babel import Babel
 
 import logging
 # This module's logger is explicitly labeled so the correct logger is used,
@@ -32,6 +33,8 @@ app = Flask(__name__, template_folder=config.SOURCE_TEMPLATES_DIR)
 app.config.from_object(config.SourceInterfaceFlaskConfig)
 CsrfProtect(app)
 
+babel = Babel(app)
+
 app.jinja_env.globals['version'] = version.__version__
 if getattr(config, 'CUSTOM_HEADER_IMAGE', None):
     app.jinja_env.globals['header_image'] = config.CUSTOM_HEADER_IMAGE
@@ -42,6 +45,10 @@ else:
 
 app.jinja_env.filters['datetimeformat'] = template_filters.datetimeformat
 app.jinja_env.filters['nl2br'] = evalcontextfilter(template_filters.nl2br)
+
+@babel.localeselector
+def get_locale():
+    return "zh"
 
 @app.teardown_appcontext
 def shutdown_session(exception=None):
@@ -321,4 +328,3 @@ if __name__ == "__main__":
     write_pidfile()
     # TODO make sure debug is not on in production
     app.run(debug=True, host='0.0.0.0', port=8080)
-
