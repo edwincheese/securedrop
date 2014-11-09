@@ -6,7 +6,6 @@ from functools import wraps
 import zipfile
 from cStringIO import StringIO
 import subprocess
-from flask.ext.babel import Babel
 
 import logging
 # This module's logger is explicitly labeled so the correct logger is used,
@@ -16,6 +15,7 @@ log = logging.getLogger('source')
 from flask import (Flask, request, render_template, session, redirect, url_for,
                    flash, abort, g, send_file)
 from flask_wtf.csrf import CsrfProtect
+from flask.ext.babel import Babel
 
 from sqlalchemy.orm.exc import MultipleResultsFound, NoResultFound
 from sqlalchemy.exc import IntegrityError
@@ -46,9 +46,10 @@ else:
 app.jinja_env.filters['datetimeformat'] = template_filters.datetimeformat
 app.jinja_env.filters['nl2br'] = evalcontextfilter(template_filters.nl2br)
 
+
 @babel.localeselector
 def get_locale():
-    return "zh"
+    return request.accept_languages.best_match(config.LANGUAGES.keys())
 
 @app.teardown_appcontext
 def shutdown_session(exception=None):

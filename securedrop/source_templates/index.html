@@ -28,21 +28,21 @@
 
         <div class="grid-item option alt">
           <h2>
-            Submit documents for the first time
+            {{_("Submit documents for the first time")}}
           </h2>
           <hr class="cut-out" />
           <p>{{_("If this is your first time submitting documents to journalists, start here.")}}</p>
           <hr class="no-line" />
-          <a href="/generate" class="btn alt block pull-bottom" id="submit-documents-button"><i class="fa fa-cloud-upload"></i> Submit Documents</a>
+          <a href="/generate" class="btn alt block pull-bottom" id="submit-documents-button"><i class="fa fa-cloud-upload"></i> {{_("Submit Documents")}}</a>
         </div>
         <div class="grid-item option">
           <h2>
-            Already submitted something?
+            {{_("Already submitted something?")}}
           </h2>
           <hr class="cut-out" />
           <p>{{_("If you have already submitted documents in the past, log in here to check for responses.")}}</p>
           <hr class="no-line" />
-          <a href="/login" class="btn block pull-bottom"><i class="fa fa-comments"></i> {{_("Check for a response"}}</a>
+          <a href="/login" class="btn block pull-bottom"><i class="fa fa-comments"></i> {{_("Check for a response")}}</a>
         </div>
       </div>
 
@@ -57,9 +57,9 @@
     <div class="bubble">
       <p>{{_("You appear to be using the Tor Browser. You can disable Javascript in 3 easy steps!")}}</p>
       <ol>
-        <li>Click <img src="static/i/no16.png"> {{_("NoScript icon in the toolbar above")}}</li>
-        <li>Click <strong><img src="static/i/no16-global.png"/> Forbid Scripts Globally (advised)</strong></li>
-        <li>{{_("If the page does not refresh automatically, <a href="/">click here</a> to refresh the page")}}</li>
+        <li>{{_("Click")}} <img src="static/i/no16.png"> {{_("NoScript icon in the toolbar above")}}</li>
+        <li>{{_("Click")}} <strong><img src="static/i/no16-global.png"/> {{_("Forbid Scripts Globally (advised)")}}</strong></li>
+        <li>{{_("If the page does not refresh automatically")}}, <a href="/">{{_("click here")}}</a> {{_("to refresh the page")}}</li>
       </ol>
       <p><a href="/howto-disable-js">{{_("Not using the Tor Browser Bundle?")}}</a></p>
     </div>

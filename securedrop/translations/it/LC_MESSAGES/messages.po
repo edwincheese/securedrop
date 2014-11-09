@@ -1,17 +1,17 @@
-# Translations template for PROJECT.
+# Italian translations for PROJECT.
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-11-09 22:31+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-11-09 20:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,177 +19,178 @@ msgstr ""
 
 #: journalist_templates/admin.html:3
 msgid "Admin Interface"
-msgstr ""
+msgstr "Interfaccia Amministrazione"
 
 #: journalist_templates/admin.html:6
 #: journalist_templates/admin_add_user.html:21
 msgid "Add user"
-msgstr ""
+msgstr "Aggiungi Utente"
 
 #: journalist_templates/admin.html:16
 msgid "Username"
-msgstr ""
+msgstr "Username"
 
 #: journalist_templates/admin.html:17
 msgid "Edit"
-msgstr ""
+msgstr "Modifica"
 
 #: journalist_templates/admin.html:18
 msgid "Delete"
-msgstr ""
+msgstr "Cancella"
 
 #: journalist_templates/admin.html:19
 msgid "Created"
-msgstr ""
+msgstr "Creato"
 
 #: journalist_templates/admin.html:20
 msgid "Last login"
-msgstr ""
+msgstr "Ultimo login"
 
 #: journalist_templates/admin.html:31
 msgid "Never"
-msgstr ""
+msgstr "Mai"
 
 #: journalist_templates/admin.html:38
 msgid "No users to display"
-msgstr ""
+msgstr "Non ci sono utenti"
 
 #: journalist_templates/admin_add_user.html:4
 msgid "Back to admin interface"
-msgstr ""
+msgstr "Torna all'interfaccia di amministrazione"
 
 #: journalist_templates/admin_add_user.html:14
 msgid "Is Administrator"
-msgstr ""
+msgstr "è Amministratore"
 
 #: journalist_templates/admin_add_user.html:18
 msgid "I'm using a Yubikey [HOTP]"
-msgstr ""
+msgstr "Uso un chiave Yubikey"
 
 #: journalist_templates/admin_edit_hotp_secret.html:7
 msgid "Change Secret"
-msgstr ""
+msgstr "Cambia Secret"
 
 #: journalist_templates/admin_edit_hotp_secret.html:10
 #: source_templates/generate.html:39 source_templates/login.html:11
 msgid "Continue"
-msgstr ""
+msgstr "Continua"
 
 #: journalist_templates/base.html:4
 msgid "SecureDrop"
-msgstr ""
+msgstr "SecureDrop"
 
 #: journalist_templates/base.html:18
 msgid "Admin"
-msgstr ""
+msgstr "Amministratore"
 
 #: journalist_templates/base.html:20
 msgid "Logout"
-msgstr ""
+msgstr "Logout"
 
 #: journalist_templates/col.html:13
 msgid ""
 "Generate a new random codename for this source. We recommend doing this "
 "if the first random codename is difficult to say or remember. You can "
 "generate new random codenames as many times as you like."
-msgstr ""
+msgstr "Genera un nuovo codename casuale per questa fonte. Si raccomanda nel caso il codename generato sia troppo difficile da memorizzare. Puoi generare un nuovo codename casuale quante volte vuoi."
 
 #: journalist_templates/col.html:13
 msgid "Change codename"
-msgstr ""
+msgstr "Cambia codename"
 
 #: journalist_templates/col.html:18
 msgid ""
 "The documents are stored encrypted for security. To read them, you will "
 "need to decrypt them using GPG."
-msgstr ""
+msgstr "I documenti sono salvati in forma criptata per ragioni di sicurezza. Per leggerli dovrai decrittarli usando GPG."
 
 #: journalist_templates/col.html:22
 msgid "Download selected"
-msgstr ""
+msgstr "Scarica i files selezionati"
 
 #: journalist_templates/col.html:23 journalist_templates/index.html:11
 msgid "Delete selected"
-msgstr ""
+msgstr "Cancella i files selezionati"
 
 #: journalist_templates/col.html:30
 msgid "sent"
-msgstr ""
+msgstr "inviato"
 
 #: journalist_templates/col.html:33
 msgid "uploaded"
-msgstr ""
+msgstr "caricato"
 
 #: journalist_templates/col.html:48
 msgid "No documents to display."
-msgstr ""
+msgstr "Non ci sono documenti da mostrare."
 
 #: journalist_templates/col.html:53
 msgid "Reply"
-msgstr ""
+msgstr "Rispondi"
 
 #: journalist_templates/col.html:55
 msgid "You can write a secure reply to the person who submitted these documents:"
-msgstr ""
+msgstr "Puoi scrivere una risposta sicura alla persona che ha inviato questi documenti:"
 
 #: journalist_templates/col.html:61
 msgid "Submit"
-msgstr ""
+msgstr "Invia"
 
 #: journalist_templates/col.html:64
 msgid "You've flagged this source for reply."
-msgstr ""
+msgstr "Hai selezionato questa fonte per una risposta."
 
 #: journalist_templates/col.html:65
 msgid ""
 "An encryption key will be generated for the source the next time they log"
 " in, after which you will be able to reply to the source here."
-msgstr ""
+msgstr "Una chiave crittografica sarà generata per la fonte la prossima volta che si connetterà, dopodiché potrai rispondere qui."
 
 #: journalist_templates/col.html:67
 msgid "Click below if you would like to write a reply to this source."
-msgstr ""
+msgstr "Clicca qui sotto se voui scrivere una risposta a questa fonte."
 
 #: journalist_templates/col.html:71
 msgid "Flag this source for reply"
-msgstr ""
+msgstr "Marca questa fonte per una risposta"
 
 #: journalist_templates/col.html:76
 msgid "Click below to delete this source's collection."
-msgstr ""
+msgstr "Clicca qui sotto per cancellare la collection di questa fonte."
 
 #: journalist_templates/col.html:76
 msgid ""
 "Warning: If you do this, the files seen here will be unrecoverable and "
 "the source will no longer be able to login using their previous codename."
-msgstr ""
+msgstr "Attenzione: i seguenti files andranno perduti e la fonte non sarà più in grado di connettersi con il proprio codename."
 
 #: journalist_templates/col.html:82
 msgid "Delete collection"
-msgstr ""
+msgstr "Cancella collection"
 
 #: journalist_templates/delete.html:7
 msgid "permanently deleted."
-msgstr ""
+msgstr "cancellato definitivamente."
 
 #: journalist_templates/delete.html:13
 #, python-format
 msgid ""
 "The following {% if count == 1 %}file has{% else %}{{ count }} files "
 "have{% endif %} been selected for <strong>permanent deletion</strong>:"
-msgstr ""
+msgstr "The following {% if count == 1 %}file has{% else %}{{ count }} files "
+"have{% endif %} been selected for <strong>permanent deletion</strong>:"
 
 #: journalist_templates/delete.html:32
 msgid "Permanently delete files"
-msgstr ""
+msgstr "Files cancellati definitivamente."
 
 #: journalist_templates/delete.html:38 journalist_templates/reply.html:10
 msgid "Return to the list of documents for"
-msgstr ""
+msgstr "Ritorna alla lista dei documenti per"
 
 #: journalist_templates/flag.html:5
 msgid "Thanks!"
-msgstr ""
+msgstr "Grazie!"
 
 #: journalist_templates/flag.html:8
 msgid ""
@@ -197,7 +198,7 @@ msgid ""
 " time that they log in. Once the key has been generated, a reply box will"
 " appear under their collection of documents. You can use this box to "
 "write encrypted replies to them."
-msgstr ""
+msgstr "SecureDrop genererà una chiave crittografica per la fonte la prossima volta che si connetterà. Una volta che la chiave è stata generate, un box di risposta apparirà sotto la collezione dei documenti. Puoi usare questo box per scrivere una risposta crittografata."
 
 #: journalist_templates/flag.html:10
 msgid "Continue to the list of documents for"
@@ -262,7 +263,7 @@ msgstr ""
 
 #: source_templates/error.html:5
 msgid "Server error"
-msgstr ""
+msgstr "Server error"
 
 #: source_templates/error.html:7
 msgid ""
@@ -304,8 +305,9 @@ msgid "Already have a codename?"
 msgstr ""
 
 #: source_templates/howto-disable-js.html:4
+#, fuzzy
 msgid "Disable JavaScript to Protect Your Anonymity"
-msgstr ""
+msgstr "Disabilita JavaScript per proteggere il tuo anonimato:"
 
 #: source_templates/howto-disable-js.html:6
 msgid ""
@@ -349,7 +351,7 @@ msgstr ""
 
 #: source_templates/index.html:13
 msgid "We recommend disabling JavaScript to protect your anonymity:"
-msgstr ""
+msgstr "Disabilita JavaScript per proteggere il tuo anonimato:"
 
 #: source_templates/index.html:13
 msgid "Learn how to disable it"
@@ -357,7 +359,7 @@ msgstr ""
 
 #: source_templates/index.html:13
 msgid "or ignore this warning to continue."
-msgstr ""
+msgstr "o ignora questo avviso per continuare"
 
 #: source_templates/index.html:31
 msgid "Submit documents for the first time"
@@ -502,4 +504,10 @@ msgstr ""
 #: source_templates/why-journalist-key.html:25
 msgid " Back to submission page"
 msgstr ""
+
+#~ msgid "Disattiva JavaScript to Protect Your Anonymity"
+#~ msgstr ""
+
+#~ msgid "Scopri come disabilitarlo,"
+#~ msgstr ""
 

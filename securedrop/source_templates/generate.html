@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block body %}
-<h2>Remember this code and keep it secret</h2>
-<p class="center">To protect your identity, we're assigning you a unique codename.</p>
+<h2>{{_("Remember this code and keep it secret")}}</h2>
+<p class="center">{{_("To protect your identity, we're assigning you a unique codename.")}}</p>
 
 <hr class="no-line" />
 
@@ -26,17 +26,17 @@
 <div class="clearfix"></div>
 <hr class="no-line">
 
-<p class="serious">Store this code somewhere safe, or memorize it. It can be used to compromise your anonymity.</p>
+<p class="serious">{{_("Store this code somewhere safe, or memorize it. It can be used to compromise your anonymity.")}}</p>
 
 <hr class="no-line" />
 
-<p><strong>Important:</strong> After you submit documents and messages, you will need this code to log in and read replies. This is the only way we can communicate back to you. You can also use your code to log in to submit more files and messages.</p>
+<p><strong>{{_("Important:")}}</strong> {{_("After you submit documents and messages, you will need this code to log in and read replies. This is the only way we can communicate back to you. You can also use your code to log in to submit more files and messages.")}}</p>
 
 <hr class="no-line" />
 
 <form id="create-form" method="post" action="/create" autocomplete="off">
   <input name="csrf_token" type="hidden" value="{{ csrf_token() }}">
-  <button type="submit" class="btn block pull-right" id="continue-button"><i class="fa fa-arrow-circle-o-right"></i> Continue</button>
-  <a id="already-have-codename" href="/login">Already have a codename?</a>
+  <button type="submit" class="btn block pull-right" id="continue-button"><i class="fa fa-arrow-circle-o-right"></i> {{_("Continue")}}</button>
+  <a id="already-have-codename" href="/login">{{_("Already have a codename?")}}</a>
 </form>
 {% endblock %}

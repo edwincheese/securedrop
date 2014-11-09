@@ -1,2 +1,4 @@
 # Don't version control config.py because it contains secret values
 config.py
+*.pyc
+*.pot
