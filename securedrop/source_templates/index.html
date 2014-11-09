@@ -10,7 +10,7 @@
     <script type="text/javascript" src="/static/js/source.js"></script>
   </head>
   <body>
-    <div class="warning"><strong>{{ _("We recommend disabling JavaScript to protect your anonymity:") }}</strong> <a id="disable-js" href="/howto-disable-js">Learn how to disable it</a>, or ignore this warning to continue. <i id="warning-close" class="fa fa-times"></i></div>
+    <div class="warning"><strong>{{ _("We recommend disabling JavaScript to protect your anonymity:") }}</strong> <a id="disable-js" href="/howto-disable-js">{{ _("Learn how to disable it") }}</a>, {{_("or ignore this warning to continue.")}} <i id="warning-close" class="fa fa-times"></i></div>
 
     {% include 'banner_warning_flashed.html' %}
 
@@ -31,7 +31,7 @@
             Submit documents for the first time
           </h2>
           <hr class="cut-out" />
-          <p>If this is your first time submitting documents to journalists, start here.</p>
+          <p>{{_("If this is your first time submitting documents to journalists, start here.")}}</p>
           <hr class="no-line" />
           <a href="/generate" class="btn alt block pull-bottom" id="submit-documents-button"><i class="fa fa-cloud-upload"></i> Submit Documents</a>
         </div>
@@ -40,14 +40,14 @@
             Already submitted something?
           </h2>
           <hr class="cut-out" />
-          <p>If you have already submitted documents in the past, log in here to check for responses.</p>
+          <p>{{_("If you have already submitted documents in the past, log in here to check for responses.")}}</p>
           <hr class="no-line" />
-          <a href="/login" class="btn block pull-bottom"><i class="fa fa-comments"></i> Check for a response</a>
+          <a href="/login" class="btn block pull-bottom"><i class="fa fa-comments"></i> {{_("Check for a response"}}</a>
         </div>
       </div>
 
       <footer>
-        Like all software, SecureDrop may contain security bugs. Use at your own risk. Powered by SecureDrop {{ version }}.
+        {{_("Like all software, SecureDrop may contain security bugs. Use at your own risk.")}} Powered by SecureDrop {{ version }}.
       </footer>
     </div>
 
@@ -55,13 +55,13 @@
     Included here so the images can preload while the user is first
     reading the page. Hidden by default. -->
     <div class="bubble">
-      <p>You appear to be using the Tor Browser. You can disable Javascript in 3 easy steps!</p>
+      <p>{{_("You appear to be using the Tor Browser. You can disable Javascript in 3 easy steps!")}}</p>
       <ol>
-        <li>Click the <img src="static/i/no16.png"> NoScript icon in the toolbar above</li>
+        <li>Click <img src="static/i/no16.png"> {{_("NoScript icon in the toolbar above")}}</li>
         <li>Click <strong><img src="static/i/no16-global.png"/> Forbid Scripts Globally (advised)</strong></li>
-        <li>If the page does not refresh automatically, <a href="/">click here</a> to refresh the page</li>
+        <li>{{_("If the page does not refresh automatically, <a href="/">click here</a> to refresh the page")}}</li>
       </ol>
-      <p><a href="/howto-disable-js">Not using the Tor Browser Bundle?</a></p>
+      <p><a href="/howto-disable-js">{{_("Not using the Tor Browser Bundle?")}}</a></p>
     </div>
 
   </body>
