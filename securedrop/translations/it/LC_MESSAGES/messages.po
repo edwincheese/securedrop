@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-09 23:52+0000\n"
+"POT-Creation-Date: 2014-11-10 00:11+0000\n"
 "PO-Revision-Date: 2014-11-09 20:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -77,6 +77,63 @@ msgstr "Cambia Secret"
 msgid "Continue"
 msgstr "Continua"
 
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:4
+msgid "Enable Google Authenticator"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:5
+msgid ""
+"You're almost done! To finish adding this new user, have them follow the "
+"instructions below to set up two factor authentication with Google "
+"Authenticator. Once they've added an entry for this account in the app, "
+"have them enter one of the 6-digit codes from the app to confirm that two"
+" factor authentication is set up correctly."
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:7
+msgid "Install Google Authenticator on your phone"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:8
+msgid "Open the Google Authenticator app"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:9
+msgid "Tap menu, then tap \"Set up account\", then tap \"Scan a barcode\""
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:10
+msgid ""
+"Your phone will now be in \"scanning\" mode. When you are in this mode, "
+"scan the barcode below:"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:13
+msgid "Can't scan the barcode? Enter the following code manually:"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:14
+msgid "Once you have scanned the barcode, enter the 6-digit code below:"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:16
+msgid "Enable Yubikey [HOTP]"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:17
+msgid "Once you have configured your Yubikey, enter the 6-digit code below:"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:21
+msgid "Verification code"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:23
+#: /vagrant/securedrop/journalist_templates/col.html:61
+#: /vagrant/securedrop/source_templates/lookup.html:31
+msgid "Submit"
+msgstr "Invia"
+
 #: /vagrant/securedrop/journalist_templates/base.html:4
 msgid "SecureDrop"
 msgstr "SecureDrop"
@@ -121,11 +178,13 @@ msgid "Delete selected"
 msgstr "Cancella i files selezionati"
 
 #: /vagrant/securedrop/journalist_templates/col.html:30
-msgid "sent"
+#, fuzzy
+msgid " sent"
 msgstr "inviato"
 
 #: /vagrant/securedrop/journalist_templates/col.html:33
-msgid "uploaded"
+#, fuzzy
+msgid " uploaded"
 msgstr "caricato"
 
 #: /vagrant/securedrop/journalist_templates/col.html:48
@@ -133,7 +192,8 @@ msgid "No documents to display."
 msgstr "Non ci sono documenti da mostrare."
 
 #: /vagrant/securedrop/journalist_templates/col.html:53
-msgid "Reply"
+#, fuzzy
+msgid " Reply"
 msgstr "Rispondi"
 
 #: /vagrant/securedrop/journalist_templates/col.html:55
@@ -141,11 +201,6 @@ msgid "You can write a secure reply to the person who submitted these documents:
 msgstr ""
 "Puoi scrivere una risposta sicura alla persona che ha inviato questi "
 "documenti:"
-
-#: /vagrant/securedrop/journalist_templates/col.html:61
-#: /vagrant/securedrop/source_templates/lookup.html:31
-msgid "Submit"
-msgstr "Invia"
 
 #: /vagrant/securedrop/journalist_templates/col.html:64
 msgid "You've flagged this source for reply."
@@ -182,26 +237,6 @@ msgstr ""
 #: /vagrant/securedrop/journalist_templates/col.html:82
 msgid "Delete collection"
 msgstr "Cancella collection"
-
-#: /vagrant/securedrop/journalist_templates/delete.html:7
-msgid "permanently deleted."
-msgstr "cancellato definitivamente."
-
-#: /vagrant/securedrop/journalist_templates/delete.html:13
-#, python-format
-msgid ""
-"The following {% if count == 1 %}file has{% else %}{{ count }} files "
-"have{% endif %} been selected for <strong>permanent deletion</strong>:"
-msgstr "   "
-
-#: /vagrant/securedrop/journalist_templates/delete.html:32
-msgid "Permanently delete files"
-msgstr "Files cancellati definitivamente."
-
-#: /vagrant/securedrop/journalist_templates/delete.html:38
-#: /vagrant/securedrop/journalist_templates/reply.html:10
-msgid "Return to the list of documents for"
-msgstr "Ritorna alla lista dei documenti per"
 
 #: /vagrant/securedrop/journalist_templates/flag.html:5
 msgid "Thanks!"
@@ -250,6 +285,10 @@ msgid "messages"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/index.html:33
+#, fuzzy
+msgid " unread"
+msgstr "Creato"
+
 #: /vagrant/securedrop/journalist_templates/index.html:59
 msgid "unread"
 msgstr ""
@@ -272,6 +311,10 @@ msgid ""
 " source has read it, they will be asked to delete it. If it disappears "
 "from the list, then you know it has been read."
 msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/reply.html:10
+msgid "Return to the list of documents for"
+msgstr "Ritorna alla lista dei documenti per"
 
 #: /vagrant/securedrop/source_templates/base.html:4
 msgid "SecureDrop | Protecting Journalists and Sources"
@@ -450,6 +493,15 @@ msgstr ""
 msgid "Not using the Tor Browser Bundle?"
 msgstr ""
 
+#: /vagrant/securedrop/source_templates/login.html:4
+msgid "Login to check for responses"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/login.html:10
+#, fuzzy
+msgid "Enter your codename"
+msgstr "Cambia codename"
+
 #: /vagrant/securedrop/source_templates/lookup.html:8
 msgid ""
 "A journalist has been waiting for you to log in again so SecureDrop can "
@@ -467,6 +519,10 @@ msgstr ""
 
 #: /vagrant/securedrop/source_templates/lookup.html:22
 msgid "Maximum upload size:"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:25
+msgid "Add message"
 msgstr ""
 
 #: /vagrant/securedrop/source_templates/lookup.html:34
@@ -613,3 +669,15 @@ msgstr ""
 #~ msgid ""
 #~ msgstr ""
 
+#~ msgid "permanently deleted."
+#~ msgstr "cancellato definitivamente."
+
+#~ msgid ""
+#~ "The following {% if count == 1 "
+#~ "%}file has{% else %}{{ count }} "
+#~ "files have{% endif %} been selected "
+#~ "for <strong>permanent deletion</strong>:"
+#~ msgstr "   "
+
+#~ msgid "Permanently delete files"
+#~ msgstr "Files cancellati definitivamente."
