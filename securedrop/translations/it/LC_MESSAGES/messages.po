@@ -364,7 +364,7 @@ msgid ""
 "risk. Powered by SecureDrop %(version)s."
 msgstr ""
 "Come ogni software, SecureDrop può contentere bug di sicurezza. Usalo a "
-"tuo rischio e pericolo."
+"tuo rischio e pericolo. Powered by SecureDrop %(version)s."
 
 #: /vagrant/securedrop/source_templates/error.html:5
 msgid "Server error"
@@ -711,4 +711,3 @@ msgstr ""
 #: /vagrant/securedrop/source_templates/why-journalist-key.html:25
 msgid " Back to submission page"
 msgstr ""
-
