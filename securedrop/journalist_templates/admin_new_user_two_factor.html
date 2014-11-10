@@ -6,8 +6,8 @@
 <ol>
   <li>{{_("Install Google Authenticator on your phone")}}</li>
   <li>{{_("Open the Google Authenticator app")}}</li>
-  <li>{{_("Tap menu, then tap "Set up account", then tap "Scan a barcode"")}}</li>
-  <li>{{_("Your phone will now be in "scanning" mode. When you are in this mode, scan the barcode below:")}}</li>
+  <li>{{_("Tap menu, then tap \"Set up account\", then tap \"Scan a barcode\"")}}</li>
+  <li>{{_("Your phone will now be in \"scanning\" mode. When you are in this mode, scan the barcode below:")}}</li>
 </ol>
 <div id="qrcode_container">{{ user.shared_secret_qrcode|safe }}</div>
 <p>{{_("Can't scan the barcode? Enter the following code manually:")}} <span id="shared_secret">{{ user.formatted_otp_secret }}</span></p>

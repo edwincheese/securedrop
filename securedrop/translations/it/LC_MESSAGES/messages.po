@@ -177,8 +177,7 @@ msgstr "cancellato definitivamente."
 msgid ""
 "The following {% if count == 1 %}file has{% else %}{{ count }} files "
 "have{% endif %} been selected for <strong>permanent deletion</strong>:"
-msgstr "The following {% if count == 1 %}file has{% else %}{{ count }} files "
-"have{% endif %} been selected for <strong>permanent deletion</strong>:"
+msgstr "   "
 
 #: journalist_templates/delete.html:32
 msgid "Permanently delete files"

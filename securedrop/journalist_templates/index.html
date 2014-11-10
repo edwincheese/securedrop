@@ -30,7 +30,7 @@
                 <span><i class="fa fa-file-text-o"></i> {{ msgs }} {{_("messages")}}</span>
                 {% if source.num_unread > 0 %}
                   <span class="unread">
-                    <a class="btn small" href='/download_unread/{{ source.filesystem_id }}'><i class="fa fa-download"></i> {{ source.num_unread }} {{_("unread")}}</a>
+                    <a class="btn small" href='/download_unread/{{ source.filesystem_id }}'><i class="fa fa-download"></i> {{ source.num_unread }}{{_(" unread")}}</a>
                   </span>
                 {% endif %}
               </div>

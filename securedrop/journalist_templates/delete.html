@@ -10,7 +10,7 @@
 {% else %}
 
   {% with count=docs_selected|length %}
-  <p>{{_("The following {% if count == 1 %}file has{% else %}{{ count }} files have{% endif %} been selected for <strong>permanent deletion</strong>:")}}</p>
+  <p>ngettext(u'The following file has been selected for <strong>permanent delection</strong>',u'The following %(value) files have been selected for <strong>permanent deletion</strong>', value={{count}})</p>
   {% endwith %}
 
   <form action="/bulk" method="post">
@@ -20,9 +20,9 @@
     {{ doc.name }}
     <input type="hidden" name="doc_names_selected" value="{{ doc.name }}" />
     {% if doc.name.startswith('reply-') %}
-      (sent {{ doc.date }})
+      ({{_("sent")}} {{ doc.date }})
     {% else %}
-      (uploaded {{ doc.date }})
+      ({{_("uploaded"}} {{ doc.date }})
     {% endif %}
   </li>
   {% endfor %}
