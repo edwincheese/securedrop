@@ -58,6 +58,7 @@ def get_locale():
         app.logger.warning("LOCALES is not defined in config")
         return None
 
+
 @app.teardown_appcontext
 def shutdown_session(exception=None):
     """Automatically remove database sessions at the end of the request, or
@@ -125,7 +126,7 @@ def check_tor2web():
 
 @app.before_request
 @ignore_static
-def set_locale():
+def apply_locale():
     try:
         locale = request.args['l']
         if locale in config.LOCALES.keys():
@@ -139,6 +140,7 @@ def set_locale():
     # Save the resolved locale in g for templates
     g.resolved_locale = get_locale()
     g.locales = config.LOCALES
+
 
 @app.route('/')
 def index():

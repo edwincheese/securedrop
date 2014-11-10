@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-10 00:11+0000\n"
+"POT-Creation-Date: 2014-11-10 00:43+0000\n"
 "PO-Revision-Date: 2014-11-09 00:01+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh <LL@li.org>\n"
@@ -27,8 +27,9 @@ msgid "Add user"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/admin.html:16
+#: /vagrant/securedrop/journalist_templates/login.html:8
 msgid "Username"
-msgstr ""
+msgstr "使用者名稱"
 
 #: /vagrant/securedrop/journalist_templates/admin.html:17
 msgid "Edit"
@@ -145,6 +146,16 @@ msgstr ""
 #: /vagrant/securedrop/journalist_templates/base.html:20
 msgid "Logout"
 msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/base.html:46
+#, python-format
+msgid "Powered by %(securedrop)s."
+msgstr "由%(securedrop)s提供"
+
+#: /vagrant/securedrop/journalist_templates/base.html:46
+#, python-format
+msgid "SecureDrop %(version)s"
+msgstr "SecureDrop %(version)s"
 
 #: /vagrant/securedrop/journalist_templates/col.html:13
 msgid ""
@@ -278,9 +289,21 @@ msgstr ""
 msgid "No documents have been submitted!"
 msgstr ""
 
+#: /vagrant/securedrop/journalist_templates/login.html:4
+msgid "Login to access the journalist interface"
+msgstr "登入記者介面"
+
+#: /vagrant/securedrop/journalist_templates/login.html:9
+msgid "Password"
+msgstr "密碼"
+
+#: /vagrant/securedrop/journalist_templates/login.html:10
+msgid "Two-factor Code"
+msgstr "驗證碼"
+
 #: /vagrant/securedrop/journalist_templates/login.html:11
 msgid "Log in"
-msgstr ""
+msgstr "登入"
 
 #: /vagrant/securedrop/journalist_templates/reply.html:5
 msgid "Thanks! Your reply has been stored."
@@ -518,8 +541,8 @@ msgid ""
 "submission provides an extra layer of security before your data reaches "
 "SecureDrop. %(why_journalist_key)s."
 msgstr ""
-"如果您能夠使用 GPG，您可以在上載檔案和留言之前用我們的%(journalist_key)s加密。"
-"SecureDrop 會自動加密所有檔案和留言，但先加密再上載可以提供額外的安全保障。%(why_journalist_key)s。"
+"如果您能夠使用 GPG，您可以在上載檔案和留言之前用我們的%(journalist_key)s加密。SecureDrop "
+"會自動加密所有檔案和留言，但先加密再上載可以提供額外的安全保障。%(why_journalist_key)s。"
 
 #: /vagrant/securedrop/source_templates/lookup.html:34
 msgid "public key"
@@ -643,10 +666,6 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
-#~ "The following {% if count == 1 "
-#~ "%}file has{% else %}{{ count }} "
-#~ "files have{% endif %} been selected "
-#~ "for <strong>permanent deletion</strong>:"
 #~ msgstr ""
 
 #~ msgid "Permanently delete files"

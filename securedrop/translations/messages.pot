@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-10 00:11+0000\n"
+"POT-Creation-Date: 2014-11-10 00:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,7 @@ msgid "Add user"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/admin.html:16
+#: /vagrant/securedrop/journalist_templates/login.html:8
 msgid "Username"
 msgstr ""
 
@@ -144,6 +145,16 @@ msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/base.html:20
 msgid "Logout"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/base.html:46
+#, python-format
+msgid "Powered by %(securedrop)s."
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/base.html:46
+#, python-format
+msgid "SecureDrop %(version)s"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/col.html:13
@@ -276,6 +287,18 @@ msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/index.html:71
 msgid "No documents have been submitted!"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/login.html:4
+msgid "Login to access the journalist interface"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/login.html:9
+msgid "Password"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/login.html:10
+msgid "Two-factor Code"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/login.html:11

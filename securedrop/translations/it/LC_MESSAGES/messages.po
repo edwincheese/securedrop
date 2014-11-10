@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-10 00:11+0000\n"
+"POT-Creation-Date: 2014-11-10 00:43+0000\n"
 "PO-Revision-Date: 2014-11-09 20:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -27,6 +27,7 @@ msgid "Add user"
 msgstr "Aggiungi Utente"
 
 #: /vagrant/securedrop/journalist_templates/admin.html:16
+#: /vagrant/securedrop/journalist_templates/login.html:8
 msgid "Username"
 msgstr "Username"
 
@@ -145,6 +146,16 @@ msgstr "Amministratore"
 #: /vagrant/securedrop/journalist_templates/base.html:20
 msgid "Logout"
 msgstr "Logout"
+
+#: /vagrant/securedrop/journalist_templates/base.html:46
+#, python-format
+msgid "Powered by %(securedrop)s."
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/base.html:46
+#, python-format
+msgid "SecureDrop %(version)s"
+msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/col.html:13
 msgid ""
@@ -295,6 +306,18 @@ msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/index.html:71
 msgid "No documents have been submitted!"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/login.html:4
+msgid "Login to access the journalist interface"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/login.html:9
+msgid "Password"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/login.html:10
+msgid "Two-factor Code"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/login.html:11
@@ -667,17 +690,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
-#~ msgstr ""
+#~ msgstr "   "
 
 #~ msgid "permanently deleted."
 #~ msgstr "cancellato definitivamente."
 
-#~ msgid ""
-#~ "The following {% if count == 1 "
-#~ "%}file has{% else %}{{ count }} "
-#~ "files have{% endif %} been selected "
-#~ "for <strong>permanent deletion</strong>:"
-#~ msgstr "   "
-
 #~ msgid "Permanently delete files"
 #~ msgstr "Files cancellati definitivamente."
+
