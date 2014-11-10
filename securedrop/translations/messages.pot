@@ -1,4 +1,4 @@
-# Translations template for PROJECT.uto-merging securedrop/translations/it/LC_MESSAGES/messages.po
+# Translations template for PROJECT.
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-10 03:04+0000\n"
+"POT-Creation-Date: 2014-11-10 03:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -472,13 +472,6 @@ msgstr ""
 
 #: /vagrant/securedrop/source_templates/index.html:45
 msgid "Check for a response"
-msgstr ""
-
-#: /vagrant/securedrop/source_templates/index.html:50
-#, python-format
-msgid ""
-"Like all software, SecureDrop may contain security bugs. Use at your own "
-"risk. Powered by SecureDrop %(version)s."
 msgstr ""
 
 #: /vagrant/securedrop/source_templates/index.html:59

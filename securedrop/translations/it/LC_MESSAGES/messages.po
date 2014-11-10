@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-10 03:04+0000\n"
+"POT-Creation-Date: 2014-11-10 03:42+0000\n"
 "PO-Revision-Date: 2014-11-09 20:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -480,21 +480,13 @@ msgid "We recommend disabling JavaScript to protect your anonymity:"
 msgstr "Disabilita JavaScript per proteggere il tuo anonimato:"
 
 #: /vagrant/securedrop/source_templates/index.html:13
-#, python-format
+#, fuzzy, python-format
 msgid " %(howto_disable_js)s, or ignore this warning to continue."
 msgstr " %(howto_disable_js)s, o ignora questo avviso per continuare."
 
 #: /vagrant/securedrop/source_templates/index.html:13
 msgid "Learn how to disable it"
 msgstr "Scopri come farlo"
-
-#, fuzzy, python-format
-msgid " %(howto_disable_js)s, or ignore this warning to continue."
-msgstr "o ignora questo avviso per continuare"
-
-#: /vagrant/securedrop/source_templates/index.html:13
-msgid "Learn how to disable it"
-msgstr ""
 
 #: /vagrant/securedrop/source_templates/index.html:31
 msgid "Submit documents for the first time"
@@ -527,15 +519,6 @@ msgstr ""
 #: /vagrant/securedrop/source_templates/index.html:45
 msgid "Check for a response"
 msgstr "Controlla le risposte"
-
-#: /vagrant/securedrop/source_templates/index.html:50
-#, python-format
-msgid ""
-"Like all software, SecureDrop may contain security bugs. Use at your own "
-"risk. Powered by SecureDrop %(version)s."
-msgstr ""
-"Come ogni software, SecureDrop può contenere bug di sicurezza. Usalo a "
-"tuo rischio e pericolo. Powered by SecureDrop %(version)s."
 
 #: /vagrant/securedrop/source_templates/index.html:59
 msgid ""
@@ -573,15 +556,6 @@ msgstr "clicca qui"
 #: /vagrant/securedrop/source_templates/index.html:65
 msgid "Not using the Tor Browser Bundle?"
 msgstr "Non stai usando Tor Browser Bundle?"
-
-
-#: /vagrant/securedrop/source_templates/index.html:63
-msgid "click here"
-msgstr ""
-
-#: /vagrant/securedrop/source_templates/index.html:65
-msgid "Not using the Tor Browser Bundle?"
-msgstr ""
 
 #: /vagrant/securedrop/source_templates/login.html:4
 msgid "Login to check for responses"
@@ -656,7 +630,6 @@ msgstr ""
 msgid "Remember, your codename is:"
 msgstr ""
 
->>>>>>> i18n/i18n-new
 #: /vagrant/securedrop/source_templates/notfound.html:5
 msgid "Page not found"
 msgstr "Pagina non trovata"
@@ -738,3 +711,4 @@ msgstr ""
 #: /vagrant/securedrop/source_templates/why-journalist-key.html:25
 msgid " Back to submission page"
 msgstr ""
+

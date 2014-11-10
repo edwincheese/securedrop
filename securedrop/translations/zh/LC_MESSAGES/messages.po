@@ -1,4 +1,5 @@
-# Chinese translations for PROJECT.uto-merging securedrop/translations/messages.pot
+# Chinese translations for PROJECT.uto-merging
+# securedrop/translations/messages.pot
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -7,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-10 03:04+0000\n"
+"POT-Creation-Date: 2014-11-10 03:42+0000\n"
 "PO-Revision-Date: 2014-11-09 00:01+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh <LL@li.org>\n"
@@ -90,37 +91,6 @@ msgstr ""
 #: /vagrant/securedrop/source_templates/login.html:11
 msgid "Continue"
 msgstr "繼續"
-
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:4
-msgid "Enable Google Authenticator"
-msgstr ""
-
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:5
-msgid ""
-"You're almost done! To finish adding this new user, have them follow the "
-"instructions below to set up two factor authentication with Google "
-"Authenticator. Once they've added an entry for this account in the app, "
-"have them enter one of the 6-digit codes from the app to confirm that two"
-" factor authentication is set up correctly."
-msgstr ""
-
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:7
-msgid "Install Google Authenticator on your phone"
-msgstr ""
-
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:8
-msgid "Open the Google Authenticator app"
-msgstr ""
-
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:9
-msgid "Tap menu, then tap \"Set up account\", then tap \"Scan a barcode\""
-msgstr ""
-
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:10
-msgid ""
-"Your phone will now be in \"scanning\" mode. When you are in this mode, "
-"scan the barcode below:"
-msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:4
 msgid "Enable Google Authenticator"
@@ -696,3 +666,4 @@ msgstr ""
 #: /vagrant/securedrop/source_templates/why-journalist-key.html:25
 msgid " Back to submission page"
 msgstr ""
+
