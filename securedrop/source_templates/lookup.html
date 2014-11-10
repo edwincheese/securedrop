@@ -22,7 +22,7 @@
       <p class="center" id="max-file-size">{{_("Maximum upload size:")}} 500 MB</p>
     </div>
     <div class="message grid-item">
-      <textarea name="msg" class="fill-parent" placeholder="Add message"></textarea>
+      <textarea name="msg" class="fill-parent" placeholder="{{ _("Add message") }}"></textarea>
     </div>
   </div>
 
@@ -31,7 +31,7 @@
   <button type="submit" class="btn primary" href="upload.html"><i class="fa fa-cloud-upload"></i> {{_("Submit")}}</button>
 </form>
 
-<p><strong>{{_("Tip:")}}</strong> {{_("If you are already familiar with GPG, you can optionally encrypt your files and messages with our <a href="/journalist-key" class="text-link">public key</a> before submission. Files are encrypted as they are received by SecureDrop; encrypting before submission provides an extra layer of security before your data reaches SecureDrop. <a href="/why-journalist-key" class="text-link">Learn more</a>.")}}</p>
+<p><strong>{{_("Tip:")}}</strong>{{_(" If you are already familiar with GPG, you can optionally encrypt your files and messages with our %(journalist_key)s before submission. Files are encrypted as they are received by SecureDrop; encrypting before submission provides an extra layer of security before your data reaches SecureDrop. %(why_journalist_key)s.", journalist_key="<a href=\"/journalist-key\" class=\"text-link\">%s</a>"|safe % _("public key"), why_journalist_key="<a href=\"/why-journalist-key\" class=\"text-link\">%s</a>"|safe % _("Learn more"))}}</p>
 
 <hr class="no-line"/>
 

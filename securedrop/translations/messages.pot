@@ -1,4 +1,4 @@
-# Translations template for PROJECT.
+# Translations template for PROJECT.uto-merging securedrop/translations/it/LC_MESSAGES/messages.po
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-10 00:57+0000\n"
+"POT-Creation-Date: 2014-11-10 00:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,7 @@ msgid "Add user"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/admin.html:16
+#: /vagrant/securedrop/journalist_templates/login.html:8
 msgid "Username"
 msgstr ""
 
@@ -35,6 +36,7 @@ msgid "Edit"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/admin.html:18
+#: /vagrant/securedrop/source_templates/lookup.html:50
 msgid "Delete"
 msgstr ""
 
@@ -129,6 +131,7 @@ msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:23
 #: /vagrant/securedrop/journalist_templates/col.html:61
+#: /vagrant/securedrop/source_templates/lookup.html:31
 msgid "Submit"
 msgstr ""
 
@@ -142,6 +145,16 @@ msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/base.html:20
 msgid "Logout"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/base.html:46
+#, python-format
+msgid "Powered by %(securedrop)s."
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/base.html:46
+#, python-format
+msgid "SecureDrop %(version)s"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/col.html:13
@@ -276,6 +289,18 @@ msgstr ""
 msgid "No documents have been submitted!"
 msgstr ""
 
+#: /vagrant/securedrop/journalist_templates/login.html:4
+msgid "Login to access the journalist interface"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/login.html:9
+msgid "Password"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/login.html:10
+msgid "Two-factor Code"
+msgstr ""
+
 #: /vagrant/securedrop/journalist_templates/login.html:11
 msgid "Log in"
 msgstr ""
@@ -300,9 +325,11 @@ msgid "SecureDrop | Protecting Journalists and Sources"
 msgstr ""
 
 #: /vagrant/securedrop/source_templates/base.html:36
+#: /vagrant/securedrop/source_templates/index.html:50
+#, python-format
 msgid ""
 "Like all software, SecureDrop may contain security bugs. Use at your own "
-"risk."
+"risk. Powered by SecureDrop %(version)s."
 msgstr ""
 
 #: /vagrant/securedrop/source_templates/error.html:5
@@ -340,7 +367,7 @@ msgstr ""
 
 #: /vagrant/securedrop/source_templates/generate.html:33
 msgid ""
-"After you submit documents and messages, you will need this code to log "
+" After you submit documents and messages, you will need this code to log "
 "in and read replies. This is the only way we can communicate back to you."
 " You can also use your code to log in to submit more files and messages."
 msgstr ""
@@ -474,6 +501,78 @@ msgstr ""
 
 #: /vagrant/securedrop/source_templates/index.html:65
 msgid "Not using the Tor Browser Bundle?"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/login.html:4
+msgid "Login to check for responses"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/login.html:10
+msgid "Enter your codename"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:8
+msgid ""
+"A journalist has been waiting for you to log in again so SecureDrop can "
+"generate a crypto key for you. Now that you have logged in, they are able"
+" to write you a reply. Check back later for replies."
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:11
+msgid "Submit documents and messages"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:12
+msgid "You can send a file, a message, or both."
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:22
+msgid "Maximum upload size:"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:25
+msgid "Add message"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:34
+msgid "Tip:"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:34
+#, python-format
+msgid ""
+" If you are already familiar with GPG, you can optionally encrypt your "
+"files and messages with our %(journalist_key)s before submission. Files "
+"are encrypted as they are received by SecureDrop; encrypting before "
+"submission provides an extra layer of security before your data reaches "
+"SecureDrop. %(why_journalist_key)s."
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:34
+msgid "public key"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:34
+msgid "Learn more"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:38
+msgid "Replies"
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:42
+msgid ""
+"You have received a reply. For your security, please delete all replies "
+"when you're done with them. This also lets us know that you have received"
+" our reply. You can respond by submitting a new message above."
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:57
+msgid "There are no replies at this time."
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:64
+msgid "Remember, your codename is:"
 msgstr ""
 
 #: /vagrant/securedrop/source_templates/notfound.html:5

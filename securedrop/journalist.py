@@ -7,6 +7,7 @@ import functools
 from flask import (Flask, request, render_template, send_file, redirect, flash,
                    url_for, g, abort, session)
 from flask_wtf.csrf import CsrfProtect
+from flask.ext.babel import Babel
 from sqlalchemy.orm.exc import MultipleResultsFound, NoResultFound
 from sqlalchemy.exc import IntegrityError
 
@@ -24,6 +25,8 @@ app = Flask(__name__, template_folder=config.JOURNALIST_TEMPLATES_DIR)
 app.config.from_object(config.JournalistInterfaceFlaskConfig)
 CsrfProtect(app)
 
+babel = Babel(app)
+
 app.jinja_env.globals['version'] = version.__version__
 if getattr(config, 'CUSTOM_HEADER_IMAGE', None):
     app.jinja_env.globals['header_image'] = config.CUSTOM_HEADER_IMAGE
@@ -33,6 +36,18 @@ else:
     app.jinja_env.globals['use_custom_header_image'] = False
 
 app.jinja_env.filters['datetimeformat'] = template_filters.datetimeformat
+
+
+@babel.localeselector
+def get_locale():
+    locale = session.get("locale")
+    try:
+        if locale and locale in config.LOCALES.keys():
+            return locale
+        return request.accept_languages.best_match(config.LOCALES.keys())
+    except AttributeError:
+        app.logger.warning("LOCALES is not defined in config")
+        return None
 
 
 @app.teardown_appcontext
@@ -64,6 +79,23 @@ def setup_g():
         if sid:
             g.sid = sid
             g.source = get_source(sid)
+
+
+@app.before_request
+def apply_locale():
+    try:
+        locale = request.args['l']
+        if locale in config.LOCALES.keys():
+            session['locale'] = locale
+        elif len(locale) == 0:
+            del session['locale']
+    except AttributeError:
+        pass
+    except KeyError:
+        pass
+    # Save the resolved locale in g for templates
+    g.resolved_locale = get_locale()
+    g.locales = config.LOCALES
 
 
 def logged_in():

@@ -1,4 +1,4 @@
-# Chinese translations for PROJECT.
+# Chinese translations for PROJECT.uto-merging securedrop/translations/messages.pot
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-10 00:57+0000\n"
+"POT-Creation-Date: 2014-11-10 00:43+0000\n"
 "PO-Revision-Date: 2014-11-09 00:01+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh <LL@li.org>\n"
@@ -27,14 +27,16 @@ msgid "Add user"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/admin.html:16
+#: /vagrant/securedrop/journalist_templates/login.html:8
 msgid "Username"
-msgstr ""
+msgstr "使用者名稱"
 
 #: /vagrant/securedrop/journalist_templates/admin.html:17
 msgid "Edit"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/admin.html:18
+#: /vagrant/securedrop/source_templates/lookup.html:50
 msgid "Delete"
 msgstr ""
 
@@ -74,6 +76,37 @@ msgstr ""
 #: /vagrant/securedrop/source_templates/generate.html:39
 #: /vagrant/securedrop/source_templates/login.html:11
 msgid "Continue"
+msgstr "繼續"
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:4
+msgid "Enable Google Authenticator"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:5
+msgid ""
+"You're almost done! To finish adding this new user, have them follow the "
+"instructions below to set up two factor authentication with Google "
+"Authenticator. Once they've added an entry for this account in the app, "
+"have them enter one of the 6-digit codes from the app to confirm that two"
+" factor authentication is set up correctly."
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:7
+msgid "Install Google Authenticator on your phone"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:8
+msgid "Open the Google Authenticator app"
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:9
+msgid "Tap menu, then tap \"Set up account\", then tap \"Scan a barcode\""
+msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:10
+msgid ""
+"Your phone will now be in \"scanning\" mode. When you are in this mode, "
+"scan the barcode below:"
 msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:4
@@ -129,8 +162,9 @@ msgstr ""
 
 #: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:23
 #: /vagrant/securedrop/journalist_templates/col.html:61
+#: /vagrant/securedrop/source_templates/lookup.html:31
 msgid "Submit"
-msgstr ""
+msgstr "提交"
 
 #: /vagrant/securedrop/journalist_templates/base.html:4
 msgid "SecureDrop"
@@ -143,6 +177,16 @@ msgstr ""
 #: /vagrant/securedrop/journalist_templates/base.html:20
 msgid "Logout"
 msgstr ""
+
+#: /vagrant/securedrop/journalist_templates/base.html:46
+#, python-format
+msgid "Powered by %(securedrop)s."
+msgstr "由%(securedrop)s提供"
+
+#: /vagrant/securedrop/journalist_templates/base.html:46
+#, python-format
+msgid "SecureDrop %(version)s"
+msgstr "SecureDrop %(version)s"
 
 #: /vagrant/securedrop/journalist_templates/col.html:13
 msgid ""
@@ -276,9 +320,21 @@ msgstr ""
 msgid "No documents have been submitted!"
 msgstr ""
 
+#: /vagrant/securedrop/journalist_templates/login.html:4
+msgid "Login to access the journalist interface"
+msgstr "登入記者介面"
+
+#: /vagrant/securedrop/journalist_templates/login.html:9
+msgid "Password"
+msgstr "密碼"
+
+#: /vagrant/securedrop/journalist_templates/login.html:10
+msgid "Two-factor Code"
+msgstr "驗證碼"
+
 #: /vagrant/securedrop/journalist_templates/login.html:11
 msgid "Log in"
-msgstr ""
+msgstr "登入"
 
 #: /vagrant/securedrop/journalist_templates/reply.html:5
 msgid "Thanks! Your reply has been stored."
@@ -300,14 +356,16 @@ msgid "SecureDrop | Protecting Journalists and Sources"
 msgstr ""
 
 #: /vagrant/securedrop/source_templates/base.html:36
+#: /vagrant/securedrop/source_templates/index.html:50
+#, python-format
 msgid ""
 "Like all software, SecureDrop may contain security bugs. Use at your own "
-"risk."
-msgstr ""
+"risk. Powered by SecureDrop %(version)s."
+msgstr "如所有軟件一樣，SecureDrop 可能存在安全漏洞。敬請注意使用風險。由 SecureDrop %(version)s 提供。"
 
 #: /vagrant/securedrop/source_templates/error.html:5
 msgid "Server error"
-msgstr ""
+msgstr "伺服器錯誤"
 
 #: /vagrant/securedrop/source_templates/error.html:7
 msgid ""
@@ -318,40 +376,40 @@ msgstr ""
 #: /vagrant/securedrop/source_templates/error.html:9
 #: /vagrant/securedrop/source_templates/notfound.html:9
 msgid "Look up a codename..."
-msgstr ""
+msgstr "以密碼組合查詢⋯⋯"
 
 #: /vagrant/securedrop/source_templates/generate.html:4
 msgid "Remember this code and keep it secret"
-msgstr ""
+msgstr "請記住這個密碼組合，或把它收藏在安全的地方"
 
 #: /vagrant/securedrop/source_templates/generate.html:5
 msgid "To protect your identity, we're assigning you a unique codename."
-msgstr ""
+msgstr "為保護你的身分，系統會為每個戶口產生一組新的隨機密碼。"
 
 #: /vagrant/securedrop/source_templates/generate.html:29
 msgid ""
 "Store this code somewhere safe, or memorize it. It can be used to "
 "compromise your anonymity."
-msgstr ""
+msgstr "把密碼組合收藏在安全的地方或把它牢記。洩漏這組密碼可能會危及您的安全。"
 
 #: /vagrant/securedrop/source_templates/generate.html:33
 msgid "Important:"
-msgstr ""
+msgstr "請注意："
 
 #: /vagrant/securedrop/source_templates/generate.html:33
 msgid ""
-"After you submit documents and messages, you will need this code to log "
+" After you submit documents and messages, you will need this code to log "
 "in and read replies. This is the only way we can communicate back to you."
 " You can also use your code to log in to submit more files and messages."
-msgstr ""
+msgstr "提交文件之後，您可以利用這組密碼登入並查閱回覆。這是我們唯一與您聯絡的方法。你也可以在登入之後提交其他文件或留言。"
 
 #: /vagrant/securedrop/source_templates/generate.html:40
 msgid "Already have a codename?"
-msgstr ""
+msgstr "已經有另一組密碼？"
 
 #: /vagrant/securedrop/source_templates/howto-disable-js.html:4
 msgid "Disable JavaScript to Protect Your Anonymity"
-msgstr ""
+msgstr "為保護您的身分安全，我們強烈建議您關閉瀏覽器的 JavaScript 功能："
 
 #: /vagrant/securedrop/source_templates/howto-disable-js.html:6
 msgid ""
@@ -395,86 +453,154 @@ msgstr ""
 
 #: /vagrant/securedrop/source_templates/index.html:13
 msgid "We recommend disabling JavaScript to protect your anonymity:"
-msgstr ""
+msgstr "為保護您的身分安全，我們強烈建議您關閉瀏覽器的 JavaScript 功能："
 
 #: /vagrant/securedrop/source_templates/index.html:13
 #, python-format
 msgid " %(howto_disable_js)s, or ignore this warning to continue."
-msgstr ""
+msgstr "%(howto_disable_js)s，或略過這個提示繼續。"
 
 #: /vagrant/securedrop/source_templates/index.html:13
 msgid "Learn how to disable it"
-msgstr ""
+msgstr "關閉 JavaScript"
 
 #: /vagrant/securedrop/source_templates/index.html:31
 msgid "Submit documents for the first time"
-msgstr ""
+msgstr "第一次提交文件"
 
 #: /vagrant/securedrop/source_templates/index.html:34
 msgid ""
 "If this is your first time submitting documents to journalists, start "
 "here."
-msgstr ""
+msgstr "第一次提交文件給記者，從這裡開始。"
 
 #: /vagrant/securedrop/source_templates/index.html:36
 msgid "Submit Documents"
-msgstr ""
+msgstr "提交文件"
 
 #: /vagrant/securedrop/source_templates/index.html:40
 msgid "Already submitted something?"
-msgstr ""
+msgstr "跟進已提交的文件？"
 
 #: /vagrant/securedrop/source_templates/index.html:43
 msgid ""
 "If you have already submitted documents in the past, log in here to check"
 " for responses."
-msgstr ""
+msgstr "如果你已提交過文件，你可以登入查閱回覆。"
 
 #: /vagrant/securedrop/source_templates/index.html:45
 msgid "Check for a response"
-msgstr ""
-
-#: /vagrant/securedrop/source_templates/index.html:50
-#, python-format
-msgid ""
-"Like all software, SecureDrop may contain security bugs. Use at your own "
-"risk. Powered by SecureDrop %(version)s."
-msgstr ""
+msgstr "查閱回覆"
 
 #: /vagrant/securedrop/source_templates/index.html:59
 msgid ""
 "You appear to be using the Tor Browser. You can disable Javascript in 3 "
 "easy steps!"
-msgstr ""
+msgstr "你看來正在使用 Tor Browser。只需要三個簡單步驟即可關閉 JavaScript！"
 
 #: /vagrant/securedrop/source_templates/index.html:61
 #, python-format
 msgid "Click %(img)s NoScript icon in the toolbar above"
-msgstr ""
+msgstr "按瀏覽器工具欄的 %(img)s NoScript 標誌"
 
 #: /vagrant/securedrop/source_templates/index.html:62
 #, python-format
 msgid "Click %(forbid_scripts_globally)s"
-msgstr ""
+msgstr "按 %(forbid_scripts_globally)s"
 
 #: /vagrant/securedrop/source_templates/index.html:62
+#, fuzzy
 msgid "Forbid Scripts Globally (advised)"
-msgstr ""
+msgstr "Forbid Scripts Globally (advised)"
 
 #: /vagrant/securedrop/source_templates/index.html:63
 #, python-format
 msgid ""
 "If the page does not refresh automatically, %(click_here)s to refresh the"
 " page"
-msgstr ""
+msgstr "如果網頁沒有重新載入，%(click_here)s重新載入。"
 
 #: /vagrant/securedrop/source_templates/index.html:63
 msgid "click here"
-msgstr ""
+msgstr "按這裡"
 
 #: /vagrant/securedrop/source_templates/index.html:65
 msgid "Not using the Tor Browser Bundle?"
+msgstr "並非使用 Tor Browser？"
+
+#: /vagrant/securedrop/source_templates/login.html:4
+msgid "Login to check for responses"
+msgstr "登入以查閱回覆"
+
+#: /vagrant/securedrop/source_templates/login.html:10
+msgid "Enter your codename"
+msgstr "請輸入您的密碼組合是："
+
+#: /vagrant/securedrop/source_templates/lookup.html:8
+msgid ""
+"A journalist has been waiting for you to log in again so SecureDrop can "
+"generate a crypto key for you. Now that you have logged in, they are able"
+" to write you a reply. Check back later for replies."
 msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:11
+msgid "Submit documents and messages"
+msgstr "提交文件或留言"
+
+#: /vagrant/securedrop/source_templates/lookup.html:12
+msgid "You can send a file, a message, or both."
+msgstr "您可以上載文件或留言。"
+
+#: /vagrant/securedrop/source_templates/lookup.html:22
+msgid "Maximum upload size:"
+msgstr "檔案大小上限："
+
+#: /vagrant/securedrop/source_templates/lookup.html:25
+msgid "Add message"
+msgstr "撰寫留言"
+
+#: /vagrant/securedrop/source_templates/lookup.html:34
+msgid "Tip:"
+msgstr "提示："
+
+#: /vagrant/securedrop/source_templates/lookup.html:34
+#, python-format
+msgid ""
+" If you are already familiar with GPG, you can optionally encrypt your "
+"files and messages with our %(journalist_key)s before submission. Files "
+"are encrypted as they are received by SecureDrop; encrypting before "
+"submission provides an extra layer of security before your data reaches "
+"SecureDrop. %(why_journalist_key)s."
+msgstr ""
+"如果您能夠使用 GPG，您可以在上載檔案和留言之前用我們的%(journalist_key)s加密。SecureDrop "
+"會自動加密所有檔案和留言，但先加密再上載可以提供額外的安全保障。%(why_journalist_key)s。"
+
+#: /vagrant/securedrop/source_templates/lookup.html:34
+msgid "public key"
+msgstr "公開金鑰"
+
+#: /vagrant/securedrop/source_templates/lookup.html:34
+msgid "Learn more"
+msgstr "了解更多"
+
+#: /vagrant/securedrop/source_templates/lookup.html:38
+msgid "Replies"
+msgstr "回覆"
+
+#: /vagrant/securedrop/source_templates/lookup.html:42
+msgid ""
+"You have received a reply. For your security, please delete all replies "
+"when you're done with them. This also lets us know that you have received"
+" our reply. You can respond by submitting a new message above."
+msgstr ""
+
+#: /vagrant/securedrop/source_templates/lookup.html:57
+msgid "There are no replies at this time."
+msgstr "暫時未有回覆。"
+
+#: /vagrant/securedrop/source_templates/lookup.html:64
+msgid "Remember, your codename is:"
+msgstr "請記住，您的密碼組合是："
 
 #: /vagrant/securedrop/source_templates/notfound.html:5
 msgid "Page not found"
@@ -557,43 +683,4 @@ msgstr ""
 #: /vagrant/securedrop/source_templates/why-journalist-key.html:25
 msgid " Back to submission page"
 msgstr ""
-
-#~ msgid "We recommend disabling JavaScript to protect your anonymity:"
-#~ msgstr "我們建議你關閉 JavaScript"
-
-#~ msgid "Learn how to disable it"
-#~ msgstr ""
-
-#~ msgid "or ignore this warning to continue."
-#~ msgstr ""
-
-#~ msgid "sent"
-#~ msgstr ""
-
-#~ msgid "uploaded"
-#~ msgstr ""
-
-#~ msgid "Reply"
-#~ msgstr ""
-
-#~ msgid "permanently deleted."
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Permanently delete files"
-#~ msgstr ""
-
-#~ msgid "Click"
-#~ msgstr ""
-
-#~ msgid "NoScript icon in the toolbar above"
-#~ msgstr ""
-
-#~ msgid "If the page does not refresh automatically"
-#~ msgstr ""
-
-#~ msgid "to refresh the page"
-#~ msgstr ""
 

@@ -33,7 +33,7 @@
 
       {% block footer %}
       <footer>
-        {{_("Like all software, SecureDrop may contain security bugs. Use at your own risk.")}} Powered by SecureDrop {{ version }}.
+        {{_("Like all software, SecureDrop may contain security bugs. Use at your own risk. Powered by SecureDrop %(version)s.", version=version)}}
       </footer>
       {% include 'locale_selection.html' %}
       {% endblock %}
