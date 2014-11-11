@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-10 03:42+0000\n"
+"POT-Creation-Date: 2014-11-11 03:37+0000\n"
 "PO-Revision-Date: 2014-11-09 20:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -17,85 +17,85 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: /vagrant/securedrop/source.py:258
+#: securedrop/source.py:258
 msgid "Thanks! We received your message."
 msgstr ""
 
-#: /vagrant/securedrop/source.py:263
+#: securedrop/source.py:263
 #, python-format
 msgid "Thanks! We received your document \"%(filename)s\"."
 msgstr ""
 
-#: /vagrant/securedrop/source.py:293
+#: securedrop/source.py:293
 msgid "Reply deleted"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin.html:3
+#: securedrop/journalist_templates/admin.html:3
 msgid "Admin Interface"
 msgstr "Interfaccia Amministrazione"
 
-#: /vagrant/securedrop/journalist_templates/admin.html:6
-#: /vagrant/securedrop/journalist_templates/admin_add_user.html:21
+#: securedrop/journalist_templates/admin.html:6
+#: securedrop/journalist_templates/admin_add_user.html:21
 msgid "Add user"
 msgstr "Aggiungi Utente"
 
-#: /vagrant/securedrop/journalist_templates/admin.html:16
-#: /vagrant/securedrop/journalist_templates/login.html:8
+#: securedrop/journalist_templates/admin.html:16
+#: securedrop/journalist_templates/login.html:8
 msgid "Username"
 msgstr "Username"
 
-#: /vagrant/securedrop/journalist_templates/admin.html:17
+#: securedrop/journalist_templates/admin.html:17
 msgid "Edit"
 msgstr "Modifica"
 
-#: /vagrant/securedrop/journalist_templates/admin.html:18
-#: /vagrant/securedrop/source_templates/lookup.html:50
+#: securedrop/journalist_templates/admin.html:18
+#: securedrop/source_templates/lookup.html:50
 msgid "Delete"
 msgstr "Cancella"
 
-#: /vagrant/securedrop/journalist_templates/admin.html:19
+#: securedrop/journalist_templates/admin.html:19
 msgid "Created"
 msgstr "Creato"
 
-#: /vagrant/securedrop/journalist_templates/admin.html:20
+#: securedrop/journalist_templates/admin.html:20
 msgid "Last login"
 msgstr "Ultimo login"
 
-#: /vagrant/securedrop/journalist_templates/admin.html:31
+#: securedrop/journalist_templates/admin.html:31
 msgid "Never"
 msgstr "Mai"
 
-#: /vagrant/securedrop/journalist_templates/admin.html:38
+#: securedrop/journalist_templates/admin.html:38
 msgid "No users to display"
 msgstr "Non ci sono utenti"
 
-#: /vagrant/securedrop/journalist_templates/admin_add_user.html:4
+#: securedrop/journalist_templates/admin_add_user.html:4
 msgid "Back to admin interface"
 msgstr "Torna all'interfaccia di amministrazione"
 
-#: /vagrant/securedrop/journalist_templates/admin_add_user.html:14
+#: securedrop/journalist_templates/admin_add_user.html:14
 msgid "Is Administrator"
 msgstr "è Amministratore"
 
-#: /vagrant/securedrop/journalist_templates/admin_add_user.html:18
+#: securedrop/journalist_templates/admin_add_user.html:18
 msgid "I'm using a Yubikey [HOTP]"
 msgstr "Uso un chiave Yubikey"
 
-#: /vagrant/securedrop/journalist_templates/admin_edit_hotp_secret.html:7
+#: securedrop/journalist_templates/admin_edit_hotp_secret.html:7
 msgid "Change Secret"
 msgstr "Cambia Secret"
 
-#: /vagrant/securedrop/journalist_templates/admin_edit_hotp_secret.html:10
-#: /vagrant/securedrop/source_templates/generate.html:39
-#: /vagrant/securedrop/source_templates/login.html:11
+#: securedrop/journalist_templates/admin_edit_hotp_secret.html:10
+#: securedrop/source_templates/generate.html:39
+#: securedrop/source_templates/login.html:11
 msgid "Continue"
 msgstr "Continua"
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:4
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:4
 msgid "Enable Google Authenticator"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:5
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:5
 msgid ""
 "You're almost done! To finish adding this new user, have them follow the "
 "instructions below to set up two factor authentication with Google "
@@ -104,73 +104,73 @@ msgid ""
 " factor authentication is set up correctly."
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:7
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:7
 msgid "Install Google Authenticator on your phone"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:8
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:8
 msgid "Open the Google Authenticator app"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:9
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:9
 msgid "Tap menu, then tap \"Set up account\", then tap \"Scan a barcode\""
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:10
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:10
 msgid ""
 "Your phone will now be in \"scanning\" mode. When you are in this mode, "
 "scan the barcode below:"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:13
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:13
 msgid "Can't scan the barcode? Enter the following code manually:"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:14
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:14
 msgid "Once you have scanned the barcode, enter the 6-digit code below:"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:16
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:16
 msgid "Enable Yubikey [HOTP]"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:17
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:17
 msgid "Once you have configured your Yubikey, enter the 6-digit code below:"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:21
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:21
 msgid "Verification code"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/admin_new_user_two_factor.html:23
-#: /vagrant/securedrop/journalist_templates/col.html:61
-#: /vagrant/securedrop/source_templates/lookup.html:31
+#: securedrop/journalist_templates/admin_new_user_two_factor.html:23
+#: securedrop/journalist_templates/col.html:61
+#: securedrop/source_templates/lookup.html:31
 msgid "Submit"
 msgstr "Invia"
 
-#: /vagrant/securedrop/journalist_templates/base.html:4
+#: securedrop/journalist_templates/base.html:4
 msgid "SecureDrop"
 msgstr "SecureDrop"
 
-#: /vagrant/securedrop/journalist_templates/base.html:18
+#: securedrop/journalist_templates/base.html:18
 msgid "Admin"
 msgstr "Amministratore"
 
-#: /vagrant/securedrop/journalist_templates/base.html:20
+#: securedrop/journalist_templates/base.html:20
 msgid "Logout"
 msgstr "Logout"
 
-#: /vagrant/securedrop/journalist_templates/base.html:46
+#: securedrop/journalist_templates/base.html:46
 #, python-format
 msgid "Powered by %(securedrop)s."
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/base.html:46
+#: securedrop/journalist_templates/base.html:46
 #, python-format
 msgid "SecureDrop %(version)s"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/col.html:13
+#: securedrop/journalist_templates/col.html:13
 msgid ""
 "Generate a new random codename for this source. We recommend doing this "
 "if the first random codename is difficult to say or remember. You can "
@@ -180,11 +180,11 @@ msgstr ""
 " il codename generato sia troppo difficile da memorizzare. Puoi generare "
 "un nuovo codename casuale quante volte vuoi."
 
-#: /vagrant/securedrop/journalist_templates/col.html:13
+#: securedrop/journalist_templates/col.html:13
 msgid "Change codename"
 msgstr "Cambia codename"
 
-#: /vagrant/securedrop/journalist_templates/col.html:18
+#: securedrop/journalist_templates/col.html:18
 msgid ""
 "The documents are stored encrypted for security. To read them, you will "
 "need to decrypt them using GPG."
@@ -192,45 +192,45 @@ msgstr ""
 "I documenti sono salvati in forma criptata per ragioni di sicurezza. Per "
 "leggerli dovrai decrittarli usando GPG."
 
-#: /vagrant/securedrop/journalist_templates/col.html:22
+#: securedrop/journalist_templates/col.html:22
 msgid "Download selected"
 msgstr "Scarica i files selezionati"
 
-#: /vagrant/securedrop/journalist_templates/col.html:23
-#: /vagrant/securedrop/journalist_templates/index.html:11
+#: securedrop/journalist_templates/col.html:23
+#: securedrop/journalist_templates/index.html:11
 msgid "Delete selected"
 msgstr "Cancella i files selezionati"
 
-#: /vagrant/securedrop/journalist_templates/col.html:30
+#: securedrop/journalist_templates/col.html:30
 #, fuzzy
 msgid " sent"
 msgstr "inviato"
 
-#: /vagrant/securedrop/journalist_templates/col.html:33
+#: securedrop/journalist_templates/col.html:33
 #, fuzzy
 msgid " uploaded"
 msgstr "caricato"
 
-#: /vagrant/securedrop/journalist_templates/col.html:48
+#: securedrop/journalist_templates/col.html:48
 msgid "No documents to display."
 msgstr "Non ci sono documenti da mostrare."
 
-#: /vagrant/securedrop/journalist_templates/col.html:53
+#: securedrop/journalist_templates/col.html:53
 #, fuzzy
 msgid " Reply"
 msgstr "Rispondi"
 
-#: /vagrant/securedrop/journalist_templates/col.html:55
+#: securedrop/journalist_templates/col.html:55
 msgid "You can write a secure reply to the person who submitted these documents:"
 msgstr ""
 "Puoi scrivere una risposta sicura alla persona che ha inviato questi "
 "documenti:"
 
-#: /vagrant/securedrop/journalist_templates/col.html:64
+#: securedrop/journalist_templates/col.html:64
 msgid "You've flagged this source for reply."
 msgstr "Hai selezionato questa fonte per una risposta."
 
-#: /vagrant/securedrop/journalist_templates/col.html:65
+#: securedrop/journalist_templates/col.html:65
 msgid ""
 "An encryption key will be generated for the source the next time they log"
 " in, after which you will be able to reply to the source here."
@@ -238,19 +238,19 @@ msgstr ""
 "Una chiave crittografica sarà generata per la fonte la prossima volta che"
 " si connetterà, dopodiché potrai rispondere qui."
 
-#: /vagrant/securedrop/journalist_templates/col.html:67
+#: securedrop/journalist_templates/col.html:67
 msgid "Click below if you would like to write a reply to this source."
 msgstr "Clicca qui sotto se voui scrivere una risposta a questa fonte."
 
-#: /vagrant/securedrop/journalist_templates/col.html:71
+#: securedrop/journalist_templates/col.html:71
 msgid "Flag this source for reply"
 msgstr "Marca questa fonte per una risposta"
 
-#: /vagrant/securedrop/journalist_templates/col.html:76
+#: securedrop/journalist_templates/col.html:76
 msgid "Click below to delete this source's collection."
 msgstr "Clicca qui sotto per cancellare la collection di questa fonte."
 
-#: /vagrant/securedrop/journalist_templates/col.html:76
+#: securedrop/journalist_templates/col.html:76
 msgid ""
 "Warning: If you do this, the files seen here will be unrecoverable and "
 "the source will no longer be able to login using their previous codename."
@@ -258,15 +258,15 @@ msgstr ""
 "Attenzione: i seguenti files andranno perduti e la fonte non sarà più in "
 "grado di connettersi con il proprio codename."
 
-#: /vagrant/securedrop/journalist_templates/col.html:82
+#: securedrop/journalist_templates/col.html:82
 msgid "Delete collection"
 msgstr "Cancella collection"
 
-#: /vagrant/securedrop/journalist_templates/flag.html:5
+#: securedrop/journalist_templates/flag.html:5
 msgid "Thanks!"
 msgstr "Grazie!"
 
-#: /vagrant/securedrop/journalist_templates/flag.html:8
+#: securedrop/journalist_templates/flag.html:8
 msgid ""
 "SecureDrop will generate a secure encryption key for this source the next"
 " time that they log in. Once the key has been generated, a reply box will"
@@ -278,86 +278,86 @@ msgstr ""
 " di risposta apparirà sotto la collezione dei documenti. Puoi usare "
 "questo box per scrivere una risposta crittografata."
 
-#: /vagrant/securedrop/journalist_templates/flag.html:10
+#: securedrop/journalist_templates/flag.html:10
 msgid "Continue to the list of documents for"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/index.html:10
+#: securedrop/journalist_templates/index.html:10
 msgid "select all"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/index.html:10
+#: securedrop/journalist_templates/index.html:10
 msgid "select none"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/index.html:12
+#: securedrop/journalist_templates/index.html:12
 msgid "Star Selected"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/index.html:13
+#: securedrop/journalist_templates/index.html:13
 msgid "Un-star Selected"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/index.html:29
-#: /vagrant/securedrop/journalist_templates/index.html:55
+#: securedrop/journalist_templates/index.html:29
+#: securedrop/journalist_templates/index.html:55
 msgid "docs"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/index.html:30
-#: /vagrant/securedrop/journalist_templates/index.html:56
+#: securedrop/journalist_templates/index.html:30
+#: securedrop/journalist_templates/index.html:56
 msgid "messages"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/index.html:33
+#: securedrop/journalist_templates/index.html:33
 #, fuzzy
 msgid " unread"
 msgstr "Creato"
 
-#: /vagrant/securedrop/journalist_templates/index.html:59
+#: securedrop/journalist_templates/index.html:59
 msgid "unread"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/index.html:71
+#: securedrop/journalist_templates/index.html:71
 msgid "No documents have been submitted!"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/login.html:4
+#: securedrop/journalist_templates/login.html:4
 msgid "Login to access the journalist interface"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/login.html:9
+#: securedrop/journalist_templates/login.html:9
 msgid "Password"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/login.html:10
+#: securedrop/journalist_templates/login.html:10
 msgid "Two-factor Code"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/login.html:11
+#: securedrop/journalist_templates/login.html:11
 msgid "Log in"
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/reply.html:5
+#: securedrop/journalist_templates/reply.html:5
 msgid "Thanks! Your reply has been stored."
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/reply.html:8
+#: securedrop/journalist_templates/reply.html:8
 msgid ""
 "You will now see it in the list of documents in that collection. Once the"
 " source has read it, they will be asked to delete it. If it disappears "
 "from the list, then you know it has been read."
 msgstr ""
 
-#: /vagrant/securedrop/journalist_templates/reply.html:10
+#: securedrop/journalist_templates/reply.html:10
 msgid "Return to the list of documents for"
 msgstr "Ritorna alla lista dei documenti per"
 
-#: /vagrant/securedrop/source_templates/base.html:4
+#: securedrop/source_templates/base.html:4
 msgid "SecureDrop | Protecting Journalists and Sources"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/base.html:36
-#: /vagrant/securedrop/source_templates/index.html:50
+#: securedrop/source_templates/base.html:36
+#: securedrop/source_templates/index.html:50
 #, python-format
 msgid ""
 "Like all software, SecureDrop may contain security bugs. Use at your own "
@@ -366,30 +366,30 @@ msgstr ""
 "Come ogni software, SecureDrop può contentere bug di sicurezza. Usalo a "
 "tuo rischio e pericolo. Powered by SecureDrop %(version)s."
 
-#: /vagrant/securedrop/source_templates/error.html:5
+#: securedrop/source_templates/error.html:5
 msgid "Server error"
 msgstr "Server error"
 
-#: /vagrant/securedrop/source_templates/error.html:7
+#: securedrop/source_templates/error.html:7
 msgid ""
 "Sorry, the website encountered an error and was unable to complete your "
 "request."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/error.html:9
-#: /vagrant/securedrop/source_templates/notfound.html:9
+#: securedrop/source_templates/error.html:9
+#: securedrop/source_templates/notfound.html:9
 msgid "Look up a codename..."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/generate.html:4
+#: securedrop/source_templates/generate.html:4
 msgid "Remember this code and keep it secret"
 msgstr "Ricordati questo codice e mantienilo segreto"
 
-#: /vagrant/securedrop/source_templates/generate.html:5
+#: securedrop/source_templates/generate.html:5
 msgid "To protect your identity, we're assigning you a unique codename."
 msgstr "Per proteggere la tua identità, ti verrà assegnato un codename unico."
 
-#: /vagrant/securedrop/source_templates/generate.html:29
+#: securedrop/source_templates/generate.html:29
 msgid ""
 "Store this code somewhere safe, or memorize it. It can be used to "
 "compromise your anonymity."
@@ -397,11 +397,11 @@ msgstr ""
 "Questo codename può essere utilizzato per compromettere il tuo anonimato,"
 " conservalo in un luogo sicuro o imparalo a memoria."
 
-#: /vagrant/securedrop/source_templates/generate.html:33
+#: securedrop/source_templates/generate.html:33
 msgid "Important:"
 msgstr "Importante:"
 
-#: /vagrant/securedrop/source_templates/generate.html:33
+#: securedrop/source_templates/generate.html:33
 msgid ""
 " After you submit documents and messages, you will need this code to log "
 "in and read replies. This is the only way we can communicate back to you."
@@ -412,15 +412,15 @@ msgstr ""
 "rimanere in contatto con te. Potrai usare questo codice anche per inviare"
 " altri files o messaggi."
 
-#: /vagrant/securedrop/source_templates/generate.html:40
+#: securedrop/source_templates/generate.html:40
 msgid "Already have a codename?"
 msgstr "Hai già un codename?"
 
-#: /vagrant/securedrop/source_templates/howto-disable-js.html:4
+#: securedrop/source_templates/howto-disable-js.html:4
 msgid "Disable JavaScript to Protect Your Anonymity"
 msgstr "Disabilita JavaScript per proteggere il tuo anonimato:"
 
-#: /vagrant/securedrop/source_templates/howto-disable-js.html:6
+#: securedrop/source_templates/howto-disable-js.html:6
 msgid ""
 "JavaScript is a widely used programming language for creating interactive"
 " web pages. Unfortunately, JavaScript is also the most common source of "
@@ -443,7 +443,7 @@ msgstr ""
 "giraffe-nsa-tor-document), il cui obiettivo è de anonimizzare gli utenti "
 "Tor."
 
-#: /vagrant/securedrop/source_templates/howto-disable-js.html:8
+#: securedrop/source_templates/howto-disable-js.html:8
 msgid ""
 "We encourage SecureDrop users to disable JavaScript to protect themselves"
 " from malware that would use it to attack their browser and potentially "
@@ -455,7 +455,7 @@ msgstr ""
 "proteggersi da malware che possonEsistono altre tecniche, ma visti i "
 "recenti attacchi basati su JavaScript riteniam"
 
-#: /vagrant/securedrop/source_templates/howto-disable-js.html:10
+#: securedrop/source_templates/howto-disable-js.html:10
 msgid ""
 "The Tor Browser comes with an add-on called NoScript that can be used to "
 "completely disable JavaScript by default, and to only enable it for sites"
@@ -465,34 +465,34 @@ msgstr ""
 "essere utilizzatoper disabilitare JavaScript di default e attivarlop solo"
 " per i siti di cui ci fidiamo. "
 
-#: /vagrant/securedrop/source_templates/howto-disable-js.html:12
+#: securedrop/source_templates/howto-disable-js.html:12
 msgid "To disable JavaScript in Tor Browser, click the NoScript icon"
 msgstr "Per disabilitare JavaScript nel Browser Tor, fai click sull'icona NoScript"
 
-#: /vagrant/securedrop/source_templates/howto-disable-js.html:12
+#: securedrop/source_templates/howto-disable-js.html:12
 msgid ""
 "to the left of the address bar above and choose \"Forbid Scripts Globally"
 " (advised)\""
 msgstr "e scegli \"Forbid Scripts Globally\""
 
-#: /vagrant/securedrop/source_templates/index.html:13
+#: securedrop/source_templates/index.html:13
 msgid "We recommend disabling JavaScript to protect your anonymity:"
 msgstr "Disabilita JavaScript per proteggere il tuo anonimato:"
 
-#: /vagrant/securedrop/source_templates/index.html:13
+#: securedrop/source_templates/index.html:13
 #, fuzzy, python-format
 msgid " %(howto_disable_js)s, or ignore this warning to continue."
 msgstr " %(howto_disable_js)s, o ignora questo avviso per continuare."
 
-#: /vagrant/securedrop/source_templates/index.html:13
+#: securedrop/source_templates/index.html:13
 msgid "Learn how to disable it"
 msgstr "Scopri come farlo"
 
-#: /vagrant/securedrop/source_templates/index.html:31
+#: securedrop/source_templates/index.html:31
 msgid "Submit documents for the first time"
 msgstr "Invia i documenti per la prima volta"
 
-#: /vagrant/securedrop/source_templates/index.html:34
+#: securedrop/source_templates/index.html:34
 msgid ""
 "If this is your first time submitting documents to journalists, start "
 "here."
@@ -500,15 +500,15 @@ msgstr ""
 "Se questa è la prima volta che invii documenti ai giornalisti, comincia "
 "qui."
 
-#: /vagrant/securedrop/source_templates/index.html:36
+#: securedrop/source_templates/index.html:36
 msgid "Submit Documents"
 msgstr "Invia Documenti"
 
-#: /vagrant/securedrop/source_templates/index.html:40
+#: securedrop/source_templates/index.html:40
 msgid "Already submitted something?"
 msgstr "Hai già inviato qualcosa?"
 
-#: /vagrant/securedrop/source_templates/index.html:43
+#: securedrop/source_templates/index.html:43
 msgid ""
 "If you have already submitted documents in the past, log in here to check"
 " for responses."
@@ -516,11 +516,11 @@ msgstr ""
 "Se hai giò inviato dei documenti in passato, fai login qui per "
 "controllare le risposte."
 
-#: /vagrant/securedrop/source_templates/index.html:45
+#: securedrop/source_templates/index.html:45
 msgid "Check for a response"
 msgstr "Controlla le risposte"
 
-#: /vagrant/securedrop/source_templates/index.html:59
+#: securedrop/source_templates/index.html:59
 msgid ""
 "You appear to be using the Tor Browser. You can disable Javascript in 3 "
 "easy steps!"
@@ -528,72 +528,72 @@ msgstr ""
 "Sembra che tu stia usando Tor Browser. Puoi disabilitare Javascript in 3 "
 "semplici passi!"
 
-#: /vagrant/securedrop/source_templates/index.html:61
+#: securedrop/source_templates/index.html:61
 #, python-format
 msgid "Click %(img)s NoScript icon in the toolbar above"
 msgstr "Fai click sull'icona %(img)s NoScript nella toolbar"
 
-#: /vagrant/securedrop/source_templates/index.html:62
+#: securedrop/source_templates/index.html:62
 #, python-format
 msgid "Click %(forbid_scripts_globally)s"
 msgstr "Fai click %(forbid_scripts_globally)s"
 
-#: /vagrant/securedrop/source_templates/index.html:62
+#: securedrop/source_templates/index.html:62
 msgid "Forbid Scripts Globally (advised)"
 msgstr "Disabilita gli scripts globalmente (consigliato)"
 
-#: /vagrant/securedrop/source_templates/index.html:63
+#: securedrop/source_templates/index.html:63
 #, python-format
 msgid ""
 "If the page does not refresh automatically, %(click_here)s to refresh the"
 " page"
 msgstr "Se la pagina non si ricarica automaticamente, %(click_here)s "
 
-#: /vagrant/securedrop/source_templates/index.html:63
+#: securedrop/source_templates/index.html:63
 msgid "click here"
 msgstr "clicca qui"
 
-#: /vagrant/securedrop/source_templates/index.html:65
+#: securedrop/source_templates/index.html:65
 msgid "Not using the Tor Browser Bundle?"
 msgstr "Non stai usando Tor Browser Bundle?"
 
-#: /vagrant/securedrop/source_templates/login.html:4
+#: securedrop/source_templates/login.html:4
 msgid "Login to check for responses"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/login.html:10
+#: securedrop/source_templates/login.html:10
 #, fuzzy
 msgid "Enter your codename"
 msgstr "Cambia codename"
 
-#: /vagrant/securedrop/source_templates/lookup.html:8
+#: securedrop/source_templates/lookup.html:8
 msgid ""
 "A journalist has been waiting for you to log in again so SecureDrop can "
 "generate a crypto key for you. Now that you have logged in, they are able"
 " to write you a reply. Check back later for replies."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:11
+#: securedrop/source_templates/lookup.html:11
 msgid "Submit documents and messages"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:12
+#: securedrop/source_templates/lookup.html:12
 msgid "You can send a file, a message, or both."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:22
+#: securedrop/source_templates/lookup.html:22
 msgid "Maximum upload size:"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:25
+#: securedrop/source_templates/lookup.html:25
 msgid "Add message"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:34
+#: securedrop/source_templates/lookup.html:34
 msgid "Tip:"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:34
+#: securedrop/source_templates/lookup.html:34
 #, python-format
 msgid ""
 " If you are already familiar with GPG, you can optionally encrypt your "
@@ -603,82 +603,82 @@ msgid ""
 "SecureDrop. %(why_journalist_key)s."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:34
+#: securedrop/source_templates/lookup.html:34
 msgid "public key"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:34
+#: securedrop/source_templates/lookup.html:34
 msgid "Learn more"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:38
+#: securedrop/source_templates/lookup.html:38
 msgid "Replies"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:42
+#: securedrop/source_templates/lookup.html:42
 msgid ""
 "You have received a reply. For your security, please delete all replies "
 "when you're done with them. This also lets us know that you have received"
 " our reply. You can respond by submitting a new message above."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:57
+#: securedrop/source_templates/lookup.html:57
 msgid "There are no replies at this time."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/lookup.html:64
+#: securedrop/source_templates/lookup.html:64
 msgid "Remember, your codename is:"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/notfound.html:5
+#: securedrop/source_templates/notfound.html:5
 msgid "Page not found"
 msgstr "Pagina non trovata"
 
-#: /vagrant/securedrop/source_templates/notfound.html:7
+#: securedrop/source_templates/notfound.html:7
 msgid "Sorry, we couldn't locate what you requested."
 msgstr "Spiacenti, non troviamo quanto hai richiesto."
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:3
+#: securedrop/source_templates/why-journalist-key.html:3
 msgid "Why download the journalist's public key?"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:4
+#: securedrop/source_templates/why-journalist-key.html:4
 msgid ""
 "SecureDrop encrypts files and messages after they are submitted. "
 "Encrypting messages and files before submission can provide an extra "
 "layer of security before your data reaches the SecureDrop server."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:5
+#: securedrop/source_templates/why-journalist-key.html:5
 msgid ""
 "If you are already familiar with the GPG encryption software, you may "
 "wish to encrypt your submissions yourself. To do so:"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:7
+#: securedrop/source_templates/why-journalist-key.html:7
 msgid "the public key. The public key is a text file with the extension"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:8
+#: securedrop/source_templates/why-journalist-key.html:8
 msgid "Import it into your GPG keyring."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:10
+#: securedrop/source_templates/why-journalist-key.html:10
 msgid ""
 "If you are using Tails (https://tails.boum.org/), you can double-click "
 "the <code>.asc</code> file you just downloaded and it will be "
 "automatically imported to your keyring."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:11
+#: securedrop/source_templates/why-journalist-key.html:11
 msgid "If you are using Mac/Linux, open the Terminal. You can import the key with"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:14
+#: securedrop/source_templates/why-journalist-key.html:14
 msgid "Encrypt your submission."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:16
+#: securedrop/source_templates/why-journalist-key.html:16
 msgid ""
 "You will need to be able to identify the key (this is called the \"user "
 "ID\" or uid). Since the public key's filename is the key's fingerprint "
@@ -686,28 +686,29 @@ msgid ""
 "the "
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:17
+#: securedrop/source_templates/why-journalist-key.html:17
 msgid "On all systems, open the Terminal and use this gpg command:"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:20
+#: securedrop/source_templates/why-journalist-key.html:20
 msgid ""
 "Upload your encrypted submission. It will have the same filename as the "
 "unencrypted file, with .gpg at the end (e.g. "
 "<code>roswell_photos.pdf.gpg</code>"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:23
+#: securedrop/source_templates/why-journalist-key.html:23
 msgid "Tip"
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:23
+#: securedrop/source_templates/why-journalist-key.html:23
 msgid ""
 "If you wish to remain anonymous, <strong>do not</strong> use GPG to sign "
 "the encrypted file (with the <code>--sign</code> or <code>-s</code> flag)"
 " as this will reveal your GPG identity to us."
 msgstr ""
 
-#: /vagrant/securedrop/source_templates/why-journalist-key.html:25
+#: securedrop/source_templates/why-journalist-key.html:25
 msgid " Back to submission page"
 msgstr ""
+

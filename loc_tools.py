@@ -4,9 +4,8 @@ import sys
 import subprocess
 import os
 
-PROJ_DIR = os.path.dirname(os.path.realpath(__file__))
-SECUREDROP_DIR = PROJ_DIR + "/securedrop"
-BABEL_FILE = PROJ_DIR + "/babel.cfg"
+SECUREDROP_DIR = "securedrop"
+BABEL_FILE = "babel.cfg"
 TRANSLATIONS_DIR = SECUREDROP_DIR + "/translations"
 POT_FILE = TRANSLATIONS_DIR + "/messages.pot"
 
@@ -47,6 +46,9 @@ def main():
         sys.exit(1)
 
     cmd = sys.argv[1]
+
+    wd = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(wd)
 
     try:
         getattr(sys.modules[__name__], cmd)()
