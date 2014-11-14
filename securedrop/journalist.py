@@ -95,7 +95,7 @@ def apply_locale():
         pass
     # Save the resolved locale in g for templates
     g.resolved_locale = get_locale()
-    g.locales = config.LOCALES
+    g.locales = getattr(config, 'LOCALES', None)
 
 
 def logged_in():
