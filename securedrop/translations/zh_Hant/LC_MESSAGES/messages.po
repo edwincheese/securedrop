@@ -1,18 +1,20 @@
-# Chinese translations for PROJECT.uto-merging
-# securedrop/translations/messages.pot
+# Chinese (Traditional) translations for .
 # Copyright (C) 2014 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# This file is distributed under the same license as the  project.
 #
+# Translators:
+# edwincheese <edwincheese@gmail.com>, 2014
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
+"Project-Id-Version:  SecureDrop\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-14 05:26+0000\n"
-"PO-Revision-Date: 2014-11-09 00:01+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: zh <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"POT-Creation-Date: 2014-11-14 05:53+0000\n"
+"PO-Revision-Date: 2014-11-14 05:40+0000\n"
+"Last-Translator: edwincheese <edwincheese@gmail.com>\n"
+"Language-Team: Chinese Traditional (http://www.transifex.com/projects/p"
+"/securedrop-app-code/language/zh-Hant/)\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,12 +22,12 @@ msgstr ""
 
 #: securedrop/source.py:258
 msgid "Thanks! We received your message."
-msgstr ""
+msgstr "感謝您！我們已收到您的訊息。"
 
 #: securedrop/source.py:263
 #, python-format
 msgid "Thanks! We received your document \"%(filename)s\"."
-msgstr "多謝！我們已收到你的檔案 \"%(filename)s\"。"
+msgstr "感謝您！我們已收到您的文件 \"%(filename)s\"。"
 
 #: securedrop/source.py:293
 msgid "Reply deleted"
@@ -33,12 +35,12 @@ msgstr "回覆已刪除"
 
 #: securedrop/journalist_templates/admin.html:3
 msgid "Admin Interface"
-msgstr ""
+msgstr "管理員介面"
 
 #: securedrop/journalist_templates/admin.html:6
 #: securedrop/journalist_templates/admin_add_user.html:21
 msgid "Add user"
-msgstr ""
+msgstr "新增使用者"
 
 #: securedrop/journalist_templates/admin.html:16
 #: securedrop/journalist_templates/login.html:8
@@ -47,7 +49,7 @@ msgstr "使用者名稱"
 
 #: securedrop/journalist_templates/admin.html:17
 msgid "Edit"
-msgstr ""
+msgstr "更改"
 
 #: securedrop/journalist_templates/admin.html:18
 #: securedrop/source_templates/lookup.html:50
@@ -56,35 +58,35 @@ msgstr "刪除"
 
 #: securedrop/journalist_templates/admin.html:19
 msgid "Created"
-msgstr ""
+msgstr "已建立"
 
 #: securedrop/journalist_templates/admin.html:20
 msgid "Last login"
-msgstr ""
+msgstr "最後登入"
 
 #: securedrop/journalist_templates/admin.html:31
 msgid "Never"
-msgstr ""
+msgstr "從未"
 
 #: securedrop/journalist_templates/admin.html:38
 msgid "No users to display"
-msgstr ""
+msgstr "沒有使用者"
 
 #: securedrop/journalist_templates/admin_add_user.html:4
 msgid "Back to admin interface"
-msgstr ""
+msgstr "返回管理員介面"
 
 #: securedrop/journalist_templates/admin_add_user.html:14
 msgid "Is Administrator"
-msgstr ""
+msgstr "管理員"
 
 #: securedrop/journalist_templates/admin_add_user.html:18
 msgid "I'm using a Yubikey [HOTP]"
-msgstr ""
+msgstr "使用 Yubikey [HOTP]"
 
 #: securedrop/journalist_templates/admin_edit_hotp_secret.html:7
 msgid "Change Secret"
-msgstr ""
+msgstr "更改密碼"
 
 #: securedrop/journalist_templates/admin_edit_hotp_secret.html:10
 #: securedrop/source_templates/generate.html:39
@@ -94,7 +96,7 @@ msgstr "繼續"
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:4
 msgid "Enable Google Authenticator"
-msgstr ""
+msgstr "啟用 Google Authenticator"
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:5
 msgid ""
@@ -107,41 +109,41 @@ msgstr ""
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:7
 msgid "Install Google Authenticator on your phone"
-msgstr ""
+msgstr "安裝 Google Authenticator 到您的電話"
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:8
 msgid "Open the Google Authenticator app"
-msgstr ""
+msgstr "開啟 Google Authenticator"
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:9
 msgid "Tap menu, then tap \"Set up account\", then tap \"Scan a barcode\""
-msgstr ""
+msgstr "先按目錄，再按 \"Set up account\"，最後按 \"Scan a barcode\""
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:10
 msgid ""
 "Your phone will now be in \"scanning\" mode. When you are in this mode, "
 "scan the barcode below:"
-msgstr ""
+msgstr "你的電話會開始掃描。請掃描以下的條碼："
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:13
 msgid "Can't scan the barcode? Enter the following code manually:"
-msgstr ""
+msgstr "如無法掃描條碼，請人手輸入以下文字："
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:14
 msgid "Once you have scanned the barcode, enter the 6-digit code below:"
-msgstr ""
+msgstr "掃描條碼後，請輸入以下6個位的號碼："
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:16
 msgid "Enable Yubikey [HOTP]"
-msgstr ""
+msgstr "開啟 Yubikey [HOTP]"
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:17
 msgid "Once you have configured your Yubikey, enter the 6-digit code below:"
-msgstr ""
+msgstr "設定 Yubikey 後，請輸入以下6個位的號碼："
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:21
 msgid "Verification code"
-msgstr ""
+msgstr "驗證碼"
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:23
 #: securedrop/journalist_templates/col.html:61
@@ -151,15 +153,15 @@ msgstr "提交"
 
 #: securedrop/journalist_templates/base.html:4
 msgid "SecureDrop"
-msgstr ""
+msgstr "SecureDrop"
 
 #: securedrop/journalist_templates/base.html:18
 msgid "Admin"
-msgstr ""
+msgstr "管理員"
 
 #: securedrop/journalist_templates/base.html:20
 msgid "Logout"
-msgstr ""
+msgstr "登出"
 
 #: securedrop/journalist_templates/base.html:46
 #, python-format
@@ -180,64 +182,64 @@ msgstr ""
 
 #: securedrop/journalist_templates/col.html:13
 msgid "Change codename"
-msgstr ""
+msgstr "更改代號"
 
 #: securedrop/journalist_templates/col.html:18
 msgid ""
 "The documents are stored encrypted for security. To read them, you will "
 "need to decrypt them using GPG."
-msgstr ""
+msgstr "為安全起見，所有文件都已經在儲存前加密。請使用 GPG 解密以查閱文件。"
 
 #: securedrop/journalist_templates/col.html:22
 msgid "Download selected"
-msgstr ""
+msgstr "下載已選"
 
 #: securedrop/journalist_templates/col.html:23
 #: securedrop/journalist_templates/index.html:11
 msgid "Delete selected"
-msgstr ""
+msgstr "刪除已選"
 
 #: securedrop/journalist_templates/col.html:30
 msgid " sent"
-msgstr ""
+msgstr "已寄出"
 
 #: securedrop/journalist_templates/col.html:33
 msgid " uploaded"
-msgstr ""
+msgstr "已上載"
 
 #: securedrop/journalist_templates/col.html:48
 msgid "No documents to display."
-msgstr ""
+msgstr "沒有文件"
 
 #: securedrop/journalist_templates/col.html:53
 msgid "Reply"
-msgstr ""
+msgstr "回覆"
 
 #: securedrop/journalist_templates/col.html:55
 msgid "You can write a secure reply to the person who submitted these documents:"
-msgstr ""
+msgstr "您可以撰寫訊息給文件提交者："
 
 #: securedrop/journalist_templates/col.html:64
 msgid "You've flagged this source for reply."
-msgstr ""
+msgstr "您已把線人標記為待回覆。"
 
 #: securedrop/journalist_templates/col.html:65
 msgid ""
 "An encryption key will be generated for the source the next time they log"
 " in, after which you will be able to reply to the source here."
-msgstr ""
+msgstr "系統會在線人下次登入時產生新的加密密鑰，之後您可以在這裡回覆線人。"
 
 #: securedrop/journalist_templates/col.html:67
 msgid "Click below if you would like to write a reply to this source."
-msgstr ""
+msgstr "請按下面以回覆這個線人。"
 
 #: securedrop/journalist_templates/col.html:71
 msgid "Flag this source for reply"
-msgstr ""
+msgstr "標記為待回覆的線人"
 
 #: securedrop/journalist_templates/col.html:76
 msgid "Click below to delete this source's collection. "
-msgstr ""
+msgstr "請按下面以刪除這個線人的檔案。"
 
 #: securedrop/journalist_templates/col.html:76
 msgid ""
@@ -247,11 +249,11 @@ msgstr ""
 
 #: securedrop/journalist_templates/col.html:82
 msgid "Delete collection"
-msgstr ""
+msgstr "刪除檔案"
 
 #: securedrop/journalist_templates/flag.html:5
 msgid "Thanks!"
-msgstr ""
+msgstr "感謝您！"
 
 #: securedrop/journalist_templates/flag.html:8
 msgid ""
@@ -263,45 +265,45 @@ msgstr ""
 
 #: securedrop/journalist_templates/flag.html:10
 msgid "Continue to the list of documents for"
-msgstr ""
+msgstr "返回文件列表"
 
 #: securedrop/journalist_templates/index.html:10
 msgid "select all"
-msgstr ""
+msgstr "全部選取"
 
 #: securedrop/journalist_templates/index.html:10
 msgid "select none"
-msgstr ""
+msgstr "取消選取"
 
 #: securedrop/journalist_templates/index.html:12
 msgid "Star Selected"
-msgstr ""
+msgstr "加星號"
 
 #: securedrop/journalist_templates/index.html:13
 msgid "Un-star Selected"
-msgstr ""
+msgstr "取消星號"
 
 #: securedrop/journalist_templates/index.html:29
 #: securedrop/journalist_templates/index.html:55
 msgid "docs"
-msgstr ""
+msgstr "文件"
 
 #: securedrop/journalist_templates/index.html:30
 #: securedrop/journalist_templates/index.html:56
 msgid "messages"
-msgstr ""
+msgstr "訊息"
 
 #: securedrop/journalist_templates/index.html:33
 msgid " unread"
-msgstr ""
+msgstr "未讀"
 
 #: securedrop/journalist_templates/index.html:59
 msgid "unread"
-msgstr ""
+msgstr "未讀"
 
 #: securedrop/journalist_templates/index.html:71
 msgid "No documents have been submitted!"
-msgstr ""
+msgstr "未有提交文件！"
 
 #: securedrop/journalist_templates/login.html:4
 msgid "Login to access the journalist interface"
@@ -321,7 +323,7 @@ msgstr "登入"
 
 #: securedrop/journalist_templates/reply.html:5
 msgid "Thanks! Your reply has been stored."
-msgstr ""
+msgstr "感謝您！我們已儲存您的回覆。"
 
 #: securedrop/journalist_templates/reply.html:8
 msgid ""
@@ -332,7 +334,7 @@ msgstr ""
 
 #: securedrop/journalist_templates/reply.html:10
 msgid "Return to the list of documents for"
-msgstr ""
+msgstr "返回文件列表"
 
 #: securedrop/source_templates/base.html:4
 msgid "SecureDrop | Protecting Journalists and Sources"
@@ -344,7 +346,7 @@ msgstr ""
 msgid ""
 "Like all software, SecureDrop may contain security bugs. Use at your own "
 "risk. Powered by SecureDrop %(version)s."
-msgstr "如所有軟件一樣，SecureDrop 可能存在安全漏洞。敬請注意使用風險。由 SecureDrop %(version)s 提供。"
+msgstr "正如所有軟件一樣，SecureDrop 可能存在安全漏洞。敬請注意使用風險。由 SecureDrop %(version)s 提供。"
 
 #: securedrop/source_templates/error.html:5
 msgid "Server error"
@@ -354,26 +356,26 @@ msgstr "伺服器錯誤"
 msgid ""
 "Sorry, the website encountered an error and was unable to complete your "
 "request."
-msgstr ""
+msgstr "對不起，網頁發生錯誤，我們未能完成您的請求。"
 
 #: securedrop/source_templates/error.html:9
 #: securedrop/source_templates/notfound.html:9
 msgid "Look up a codename..."
-msgstr "以密碼組合查詢⋯⋯"
+msgstr "查詢代號⋯⋯"
 
 #: securedrop/source_templates/generate.html:4
 msgid "Remember this code and keep it secret"
-msgstr "請記住這個密碼組合，或把它收藏在安全的地方"
+msgstr "請記住這個代號組合，或把它收藏在安全的地方"
 
 #: securedrop/source_templates/generate.html:5
 msgid "To protect your identity, we're assigning you a unique codename."
-msgstr "為保護你的身分，系統會為每個戶口產生一組新的隨機密碼。"
+msgstr "為保護你的身分，系統會為每個戶口隨機編配一組代號。"
 
 #: securedrop/source_templates/generate.html:29
 msgid ""
 "Store this code somewhere safe, or memorize it. It can be used to "
 "compromise your anonymity."
-msgstr "把密碼組合收藏在安全的地方或把它牢記。洩漏這組密碼可能會危及您的安全。"
+msgstr "把代號組合收藏在安全的地方或牢記。洩漏這組代號可能會令您的身份暴光。"
 
 #: securedrop/source_templates/generate.html:33
 msgid "Important:"
@@ -384,15 +386,15 @@ msgid ""
 " After you submit documents and messages, you will need this code to log "
 "in and read replies. This is the only way we can communicate back to you."
 " You can also use your code to log in to submit more files and messages."
-msgstr "提交文件之後，您可以利用這組密碼登入並查閱回覆。這是我們唯一與您聯絡的方法。你也可以在登入之後提交其他文件或留言。"
+msgstr "提交文件或訊息之後，您可以利用這組代號再登入並查閱回覆。這是我們與您唯一的聯絡方法。你也可以在登入之後提交其他文件或訊息。"
 
 #: securedrop/source_templates/generate.html:40
 msgid "Already have a codename?"
-msgstr "已經有另一組密碼？"
+msgstr "已經有另一組代號？"
 
 #: securedrop/source_templates/howto-disable-js.html:4
 msgid "Disable JavaScript to Protect Your Anonymity"
-msgstr "為保護您的身分安全，我們強烈建議您關閉瀏覽器的 JavaScript 功能："
+msgstr "關閉瀏覽器的 JavaScript 功能以保護您的身份安全"
 
 #: securedrop/source_templates/howto-disable-js.html:6
 msgid ""
@@ -426,7 +428,7 @@ msgstr ""
 
 #: securedrop/source_templates/howto-disable-js.html:12
 msgid "To disable JavaScript in Tor Browser, click the NoScript icon"
-msgstr ""
+msgstr "要在 Tor Browser 關閉 JavaScript，請按 NoScript 圖標"
 
 #: securedrop/source_templates/howto-disable-js.html:12
 msgid ""
@@ -436,7 +438,7 @@ msgstr ""
 
 #: securedrop/source_templates/index.html:13
 msgid "We recommend disabling JavaScript to protect your anonymity:"
-msgstr "為保護您的身分安全，我們強烈建議您關閉瀏覽器的 JavaScript 功能："
+msgstr "為保護您的身份安全，我們強烈建議您關閉瀏覽器的 JavaScript 功能："
 
 #: securedrop/source_templates/index.html:13
 #, python-format
@@ -492,7 +494,6 @@ msgid "Click %(forbid_scripts_globally)s"
 msgstr "按 %(forbid_scripts_globally)s"
 
 #: securedrop/source_templates/index.html:62
-#, fuzzy
 msgid "Forbid Scripts Globally (advised)"
 msgstr "Forbid Scripts Globally (advised)"
 
@@ -517,7 +518,7 @@ msgstr "登入以查閱回覆"
 
 #: securedrop/source_templates/login.html:10
 msgid "Enter your codename"
-msgstr "請輸入您的密碼組合是："
+msgstr "請輸入您的代號組合："
 
 #: securedrop/source_templates/lookup.html:8
 msgid ""
@@ -528,11 +529,11 @@ msgstr ""
 
 #: securedrop/source_templates/lookup.html:11
 msgid "Submit documents and messages"
-msgstr "提交文件或留言"
+msgstr "提交文件或訊息"
 
 #: securedrop/source_templates/lookup.html:12
 msgid "You can send a file, a message, or both."
-msgstr "您可以上載文件或撰寫留言。"
+msgstr "您可以上載文件或撰寫訊息。"
 
 #: securedrop/source_templates/lookup.html:22
 msgid "Maximum upload size:"
@@ -540,7 +541,7 @@ msgstr "檔案大小上限："
 
 #: securedrop/source_templates/lookup.html:25
 msgid "Add message"
-msgstr "撰寫留言"
+msgstr "撰寫訊息"
 
 #: securedrop/source_templates/lookup.html:34
 #: securedrop/source_templates/why-journalist-key.html:23
@@ -555,9 +556,7 @@ msgid ""
 "are encrypted as they are received by SecureDrop; encrypting before "
 "submission provides an extra layer of security before your data reaches "
 "SecureDrop. %(why_journalist_key)s."
-msgstr ""
-"如果您能夠使用 GPG，您可以在上載檔案和留言之前用我們的%(journalist_key)s加密。SecureDrop "
-"會自動加密所有檔案和留言，但先加密再上載可以提供額外的安全保障。%(why_journalist_key)s。"
+msgstr "如果您能夠使用GPG，您可以在上載檔案和訊息之前用我們的%(journalist_key)s加密。SecureDrop會自動加密所有檔案和留言，但先加密再上載可以提供額外的安全保障。%(why_journalist_key)s。"
 
 #: securedrop/source_templates/lookup.html:34
 msgid "public key"
@@ -576,7 +575,7 @@ msgid ""
 "You have received a reply. For your security, please delete all replies "
 "when you're done with them. This also lets us know that you have received"
 " our reply. You can respond by submitting a new message above."
-msgstr "您有新信息。為安全理由，請在閱覽完畢後刪除信息。這樣也可以令我們知道您已經收到該信息。你可以在上面撰寫新留言回覆信息。"
+msgstr "您有新訊息。為了安全，請在閱覽完畢後刪除訊息。這樣也可以令我們知道您已經收到該訊息。另外你也可以在上面撰寫新訊息回覆。"
 
 #: securedrop/source_templates/lookup.html:57
 msgid "There are no replies at this time."
@@ -584,19 +583,19 @@ msgstr "暫時未有回覆。"
 
 #: securedrop/source_templates/lookup.html:64
 msgid "Remember, your codename is:"
-msgstr "請記住，您的密碼組合是："
+msgstr "請記住，您的代號組合是："
 
 #: securedrop/source_templates/notfound.html:5
 msgid "Page not found"
-msgstr ""
+msgstr "找不到網頁"
 
 #: securedrop/source_templates/notfound.html:7
 msgid "Sorry, we couldn't locate what you requested."
-msgstr ""
+msgstr "對不起，我們未能找到您所請求的網頁。"
 
 #: securedrop/source_templates/why-journalist-key.html:3
 msgid "Why download the journalist's public key?"
-msgstr ""
+msgstr "為什麼要下載記者的公開金鑰？"
 
 #: securedrop/source_templates/why-journalist-key.html:4
 msgid ""
@@ -620,11 +619,11 @@ msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:7
 msgid "Download"
-msgstr ""
+msgstr "下載"
 
 #: securedrop/source_templates/why-journalist-key.html:8
 msgid "Import it into your GPG keyring."
-msgstr ""
+msgstr "匯入至您的 GPG 鑰匙圈"
 
 #: securedrop/source_templates/why-journalist-key.html:10
 #, python-format
@@ -643,7 +642,7 @@ msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:14
 msgid "Encrypt your submission."
-msgstr ""
+msgstr "把你要提交的文件或訊息加密"
 
 #: securedrop/source_templates/why-journalist-key.html:16
 #, python-format
@@ -680,26 +679,5 @@ msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:25
 msgid "Back to submission page"
-msgstr ""
-
-#~ msgid "the public key. The public key is a text file with the extension"
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "On all systems, open the Terminal and use this gpg command:"
-#~ msgstr ""
-
-#~ msgid "Tip"
-#~ msgstr ""
-
-#~ msgid " Back to submission page"
-#~ msgstr ""
-
-#~ msgid " Reply"
-#~ msgstr ""
-
-#~ msgid "Click below to delete this source's collection."
-#~ msgstr ""
+msgstr "返回提交文件頁面"
 
