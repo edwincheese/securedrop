@@ -4,23 +4,23 @@
 <p>{{_("SecureDrop encrypts files and messages after they are submitted. Encrypting messages and files before submission can provide an extra layer of security before your data reaches the SecureDrop server.")}}</p>
 <p>{{_("If you are already familiar with the GPG encryption software, you may wish to encrypt your submissions yourself. To do so:")}}
 <ol>
-<li><a href="/journalist-key">Download</a> {{_("the public key. The public key is a text file with the extension")}} <code>.asc</code></li>
+<li>{{_("%(download)s the public key. The public key is a text file with the extension %(extension)s", download="<a href=\"/journalist-key\">%s</a>"|safe % _("Download"), extension="<code>.asc</code>"|safe)}}</li>
 <li>{{_("Import it into your GPG keyring.")}}
 <ul>
-<li>{{_("If you are using Tails (https://tails.boum.org/), you can double-click the <code>.asc</code> file you just downloaded and it will be automatically imported to your keyring.")}}</li>
-<li>{{_("If you are using Mac/Linux, open the Terminal. You can import the key with")}} <code>gpg --import /path/to/key.asc</code>.</li>
+<li>{{_("If you are using Tails (https://tails.boum.org/), you can double-click the %(extension)s file you just downloaded and it will be automatically imported to your keyring.", extension="<code>.asc</code>"|safe)}}</li>
+<li>{{_("If you are using Mac/Linux, open the Terminal. You can import the key with %(command)s.", command="<code>gpg --import /path/to/key.asc</code>"|safe)}}</li>
 </ul>
 </li>
 <li>{{_("Encrypt your submission.")}}
 <ol>
-<li>{{_("You will need to be able to identify the key (this is called the \"user ID\" or uid). Since the public key's filename is the key's fingerprint (with .asc at the end), you can just copy and paste that. (don't include the ")}}<code>.asc</code>!)</li>
-<li>{{_("On all systems, open the Terminal and use this gpg command:")}} <code>gpg --recipient &lt;user ID&gt; --encrypt roswell_photos.pdf</code></li>
+<li>{{_("You will need to be able to identify the key (this is called the \"user ID\" or uid). Since the public key's filename is the key's fingerprint (with .asc at the end), you can just copy and paste that. (don't include the %(extension)s!)", extension="<code>.asc</code>"|safe)}}</li>
+<li>{{_("On all systems, open the Terminal and use this gpg command: %(command)s", command="<code>gpg --recipient &lt;user ID&gt; --encrypt roswell_photos.pdf</code>"|safe)}}</li>
 </ol>
 </li>
-<li>{{_("Upload your encrypted submission. It will have the same filename as the unencrypted file, with .gpg at the end (e.g. <code>roswell_photos.pdf.gpg</code>")}}</li>
+<li>{{_("Upload your encrypted submission. It will have the same filename as the unencrypted file, with .gpg at the end (e.g. %(filename)s)", filename="<code>roswell_photos.pdf.gpg</code>"|safe)}}</li>
 </ol>
 
-<p><strong>{{_("Tip")}}:</strong> {{_("If you wish to remain anonymous, <strong>do not</strong> use GPG to sign the encrypted file (with the <code>--sign</code> or <code>-s</code> flag) as this will reveal your GPG identity to us.")}}</p>
+<p><strong>{{_("Tip:")}}</strong>{{_(" If you wish to remain anonymous, %(do_not)s use GPG to sign the encrypted file (with the %(flag1)s or %(flag2)s flag) as this will reveal your GPG identity to us.", do_not="<strong>%s</strong>"|safe % _("do not"), flag1="<code>--sign</code>"|safe, flag2="<code>-s</code>"|safe)}}</p>
 
-<p><a href="/lookup">&laquo;{{_(" Back to submission page")}}</a></p>
+<p><a href="/lookup">&laquo; {{_("Back to submission page")}}</a></p>
 {% endblock %}

@@ -50,7 +50,7 @@
 
   <hr class="cut-out" />
   <hr class="no-line" />
-  <h3><i class="fa fa-reply"></i>{{_(" Reply")}}</h3>
+  <h3><i class="fa fa-reply"></i> {{_("Reply")}}</h3>
   {% if haskey %}
     <p>{{_("You can write a secure reply to the person who submitted these documents:")}}</p>
     <form action="/reply" method="post" autocomplete="off">
@@ -73,7 +73,7 @@
   {% endif %}
   <hr class="no-line" />
   <hr class="cut-out" />
-  <p>{{_("Click below to delete this source's collection.")}} <em>{{_("Warning: If you do this, the files seen here will be unrecoverable and the source will no longer be able to login using their previous codename.")}}</em></p>
+  <p>{{_("Click below to delete this source's collection. ")}}<em>{{_("Warning: If you do this, the files seen here will be unrecoverable and the source will no longer be able to login using their previous codename.")}}</em></p>
 
   <form id="delete_collection" action="/col/delete/{{sid}}" method="post">
     <input name="csrf_token" type="hidden" value="{{ csrf_token() }}"/>
