@@ -23,12 +23,12 @@ def update():
     """Extracts messages and updates PO files"""
     print "Extracting messages..."
     rc = int(subprocess.call(
-        ['pybabel', 'extract', '-F', BABEL_FILE, '-o', POT_FILE, SECUREDROP_DIR]))
+        ['pybabel', 'extract', '--no-wrap', '--project=SecureDrop', '-F', BABEL_FILE, '-o', POT_FILE, SECUREDROP_DIR]))
     if rc != 0:
         sys.exit(rc)
     print "Updating PO files..."
     rc = int(subprocess.call(
-        ['pybabel', 'update', '-i', POT_FILE, '-d', TRANSLATIONS_DIR]))
+        ['pybabel', 'update', '--no-wrap', '-i', POT_FILE, '-d', TRANSLATIONS_DIR]))
     sys.exit(rc)
 
 def compile():
