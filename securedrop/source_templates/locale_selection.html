@@ -1,5 +1,4 @@
-{{ config.LOCALES }}
-{% if g.locales.keys()|length > 1 %}
+{% if g.locales and g.locales.keys()|length > 1 %}
 <div class="locales">
   <ul class="plain">
     {% for locale in g.locales %}
@@ -7,7 +6,7 @@
       {% if locale == g.resolved_locale %}
         {{ g.locales[locale] }}
       {% else %}
-        <a href="?l={{ locale }}">{{ g.locales[locale] }}</a>
+        <a href="?l={{ locale }}" rel="nofollow">{{ g.locales[locale] }}</a>
       {% endif %}
       </li>
     {% endfor %}

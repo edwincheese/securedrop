@@ -86,6 +86,6 @@ DATABASE_FILE = os.path.join(SECUREDROP_DATA_ROOT, 'db.sqlite')
 
 LOCALES = {
     'en': u'English',
-    'zh': u'繁體中文',
+    'zh_Hant': u'繁體中文',
     'it': u'Italian'
 }

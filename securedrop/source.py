@@ -15,7 +15,7 @@ log = logging.getLogger('source')
 from flask import (Flask, request, render_template, session, redirect, url_for,
                    flash, abort, g, send_file)
 from flask_wtf.csrf import CsrfProtect
-from flask.ext.babel import Babel
+from flask.ext.babel import Babel, _
 
 from sqlalchemy.orm.exc import MultipleResultsFound, NoResultFound
 from sqlalchemy.exc import IntegrityError
@@ -139,7 +139,7 @@ def apply_locale():
         pass
     # Save the resolved locale in g for templates
     g.resolved_locale = get_locale()
-    g.locales = config.LOCALES
+    g.locales = getattr(config, 'LOCALES', None)
 
 
 @app.route('/')
@@ -255,13 +255,13 @@ def submit():
         g.source.interaction_count += 1
         fnames.append(store.save_message_submission(g.sid, g.source.interaction_count,
             journalist_filename, msg))
-        flash("Thanks! We received your message.", "notification")
+        flash(_("Thanks! We received your message."), "notification")
     if fh:
         g.source.interaction_count += 1
         fnames.append(store.save_file_submission(g.sid, g.source.interaction_count,
             journalist_filename, fh.filename, fh.stream))
-        flash('{} "{}".'.format("Thanks! We received your document",
-                                fh.filename or '[unnamed]'), "notification")
+        flash(_("Thanks! We received your document \"%(filename)s\".",
+                filename=fh.filename or '[unnamed]'), "notification")
     for fname in fnames:
         submission = Submission(g.source, fname)
         db_session.add(submission)
@@ -290,7 +290,7 @@ def delete():
     if msgid not in potential_files:
         abort(404)  # TODO are the checks necessary?
     store.secure_unlink(store.path(g.sid, msgid))
-    flash("Reply deleted", "notification")
+    flash(_("Reply deleted"), "notification")
 
     return redirect(url_for('lookup'))
 
