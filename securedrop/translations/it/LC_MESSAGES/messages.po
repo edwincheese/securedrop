@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  SecureDrop\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-15 23:31+0000\n"
+"POT-Creation-Date: 2014-11-15 23:55+0000\n"
 "PO-Revision-Date: 2014-11-15 19:44+0000\n"
 "Last-Translator: gio <gdamiola@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/securedrop-"
@@ -485,13 +485,11 @@ msgstr ""
 " per i siti di cui ci fidiamo. "
 
 #: securedrop/source_templates/howto-disable-js.html:12
-msgid "To disable JavaScript in Tor Browser, click the NoScript icon"
-msgstr ""
-
-#: securedrop/source_templates/howto-disable-js.html:12
+#, fuzzy, python-format
 msgid ""
-"to the left of the address bar above and choose \"Forbid Scripts Globally"
-" (advised)\""
+"To disable JavaScript in Tor Browser, click the NoScript icon %(icon)s to"
+" the left of the address bar above and choose \"Forbid Scripts Globally "
+"(advised)\""
 msgstr "e scegli \"Forbid Scripts Globally\""
 
 #: securedrop/source_templates/index.html:13
@@ -780,10 +778,4 @@ msgstr ""
 #: securedrop/source_templates/why-journalist-key.html:25
 msgid "Back to submission page"
 msgstr "Torna alla pagina di invio materiale"
-
-#~ msgid "Tip"
-#~ msgstr "Consiglio: "
-
-#~ msgid " Back to submission page"
-#~ msgstr "Torna alla pagina di invio materiale"
 
