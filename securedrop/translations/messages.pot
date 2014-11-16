@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SecureDrop VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-16 00:26+0000\n"
+"POT-Creation-Date: 2014-11-16 00:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,11 +208,13 @@ msgid "Delete selected"
 msgstr ""
 
 #: securedrop/journalist_templates/col.html:30
-msgid " sent"
+#, python-format
+msgid "%(file_size)s sent %(date)s"
 msgstr ""
 
 #: securedrop/journalist_templates/col.html:33
-msgid " uploaded"
+#, python-format
+msgid "%(file_size)s uploaded %(date)s"
 msgstr ""
 
 #: securedrop/journalist_templates/col.html:36

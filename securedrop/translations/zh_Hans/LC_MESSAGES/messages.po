@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  SecureDrop\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-16 00:26+0000\n"
+"POT-Creation-Date: 2014-11-16 00:48+0000\n"
 "PO-Revision-Date: 2014-11-14 05:29+0000\n"
 "Last-Translator: edwincheese <edwincheese@gmail.com>\n"
 "Language-Team: Chinese Simplified (http://www.transifex.com/projects/p"
@@ -209,11 +209,13 @@ msgid "Delete selected"
 msgstr ""
 
 #: securedrop/journalist_templates/col.html:30
-msgid " sent"
+#, python-format
+msgid "%(file_size)s sent %(date)s"
 msgstr ""
 
 #: securedrop/journalist_templates/col.html:33
-msgid " uploaded"
+#, python-format
+msgid "%(file_size)s uploaded %(date)s"
 msgstr ""
 
 #: securedrop/journalist_templates/col.html:36
@@ -738,5 +740,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Return to the list of documents for"
+#~ msgstr ""
+
+#~ msgid " sent"
+#~ msgstr ""
+
+#~ msgid " uploaded"
 #~ msgstr ""
 
