@@ -43,7 +43,7 @@
 
       {% block footer %}
       <footer>
-        {{_("Powered by %(securedrop)s.", securedrop="<em>%s</em>"|safe % _("SecureDrop %(version)s", version=version)) }}
+        {{_("Powered by <em>SecureDrop %(version)s</em>.", version=version)}}
       </footer>
       {% include 'locale_selection.html' %}
       {% endblock %}

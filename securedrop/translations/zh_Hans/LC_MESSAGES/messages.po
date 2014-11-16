@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SecureDrop\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-16 18:56+0000\n"
-"PO-Revision-Date: 2014-11-16 18:59+0000\n"
+"POT-Creation-Date: 2014-11-16 19:27+0000\n"
+"PO-Revision-Date: 2014-11-16 19:36+0000\n"
 "Last-Translator: edwincheese <edwincheese@gmail.com>\n"
 "Language-Team: Chinese Simplified (http://www.transifex.com/projects/p/securedrop-app-code/language/zh-Hans/)\n"
 "MIME-Version: 1.0\n"
@@ -298,12 +298,7 @@ msgstr ""
 
 #: securedrop/journalist_templates/base.html:46
 #, python-format
-msgid "Powered by %(securedrop)s."
-msgstr ""
-
-#: securedrop/journalist_templates/base.html:46
-#, python-format
-msgid "SecureDrop %(version)s"
+msgid "Powered by <em>SecureDrop %(version)s</em>."
 msgstr ""
 
 #: securedrop/journalist_templates/col.html:10
@@ -429,7 +424,6 @@ msgid "Permanently delete files"
 msgstr ""
 
 #: securedrop/journalist_templates/delete.html:38
-#: securedrop/journalist_templates/reply.html:10
 #, python-format
 msgid "Return to the list of documents for %(codename)s..."
 msgstr ""
@@ -513,6 +507,11 @@ msgid ""
 "You will now see it in the list of documents in that collection. Once the "
 "source has read it, they will be asked to delete it. If it disappears from "
 "the list, then you know it has been read."
+msgstr ""
+
+#: securedrop/journalist_templates/reply.html:10
+#, python-format
+msgid "Return to the list of documents for <strong>%(codename)s</strong>..."
 msgstr ""
 
 #: securedrop/source_templates/base.html:4

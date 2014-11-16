@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SecureDrop\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-16 18:56+0000\n"
-"PO-Revision-Date: 2014-11-16 19:15+0000\n"
+"POT-Creation-Date: 2014-11-16 19:27+0000\n"
+"PO-Revision-Date: 2014-11-16 19:37+0000\n"
 "Last-Translator: edwincheese <edwincheese@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/securedrop-app-code/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -303,13 +303,8 @@ msgstr "Logout"
 
 #: securedrop/journalist_templates/base.html:46
 #, python-format
-msgid "Powered by %(securedrop)s."
-msgstr "Powered by %(securedrop)s."
-
-#: securedrop/journalist_templates/base.html:46
-#, python-format
-msgid "SecureDrop %(version)s"
-msgstr "SecureDrop %(version)s"
+msgid "Powered by <em>SecureDrop %(version)s</em>."
+msgstr "Powered by <em>SecureDrop %(version)s</em>."
 
 #: securedrop/journalist_templates/col.html:10
 msgid "All Sources"
@@ -436,7 +431,6 @@ msgid "Permanently delete files"
 msgstr "File cancellati definitivamente"
 
 #: securedrop/journalist_templates/delete.html:38
-#: securedrop/journalist_templates/reply.html:10
 #, python-format
 msgid "Return to the list of documents for %(codename)s..."
 msgstr "Ritorna alla lista dei documenti per %(codename)s..."
@@ -521,6 +515,11 @@ msgid ""
 "source has read it, they will be asked to delete it. If it disappears from "
 "the list, then you know it has been read."
 msgstr "A questo punto lo vedrai nella lista dei documenti in questo archivio. Una volta che la fonte l'avrà letto gli verrà chiesto di cancellarlo. Una volta scomparso dalla lista saprai che è stato letto."
+
+#: securedrop/journalist_templates/reply.html:10
+#, python-format
+msgid "Return to the list of documents for <strong>%(codename)s</strong>..."
+msgstr "Ritorna alla lista dei documenti per <strong>%(codename)s</strong>..."
 
 #: securedrop/source_templates/base.html:4
 msgid "SecureDrop | Protecting Journalists and Sources"
@@ -846,7 +845,7 @@ msgid ""
 "not</strong> use GPG to sign the encrypted file (with the "
 "<code>--sign</code> or <code>-s</code> flag) as this will reveal your GPG "
 "identity to us."
-msgstr "<strong>Consiglio:</strong> Se vuoi rimanere anonimo, <strong>non</strong> usare GPG per firmare il file crittato (con i flag <code>--sign</code> o <code>-s</code>) perché questo ci rivelerà la tua identità GPG."
+msgstr "<strong>Consiglio:</strong> Se vuoi rimanere anonimo <strong>non usare</strong> GPG per firmare il file crittato (con il flag <code>--sign</code> o <code>-s</code>) perché questo ci rivelerebbe la tua identità GPG."
 
 #: securedrop/source_templates/why-journalist-key.html:25
 msgid "Back to submission page"

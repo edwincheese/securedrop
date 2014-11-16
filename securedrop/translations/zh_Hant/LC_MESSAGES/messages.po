@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SecureDrop\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-16 18:56+0000\n"
-"PO-Revision-Date: 2014-11-16 19:11+0000\n"
+"POT-Creation-Date: 2014-11-16 19:27+0000\n"
+"PO-Revision-Date: 2014-11-16 19:38+0000\n"
 "Last-Translator: edwincheese <edwincheese@gmail.com>\n"
 "Language-Team: Chinese Traditional (http://www.transifex.com/projects/p/securedrop-app-code/language/zh-Hant/)\n"
 "MIME-Version: 1.0\n"
@@ -302,13 +302,8 @@ msgstr "登出"
 
 #: securedrop/journalist_templates/base.html:46
 #, python-format
-msgid "Powered by %(securedrop)s."
-msgstr "由 %(securedrop)s 提供"
-
-#: securedrop/journalist_templates/base.html:46
-#, python-format
-msgid "SecureDrop %(version)s"
-msgstr "SecureDrop %(version)s"
+msgid "Powered by <em>SecureDrop %(version)s</em>."
+msgstr "由 <em>SecureDrop %(version)s</em> 提供"
 
 #: securedrop/journalist_templates/col.html:10
 msgid "All Sources"
@@ -433,7 +428,6 @@ msgid "Permanently delete files"
 msgstr "永久刪除檔案"
 
 #: securedrop/journalist_templates/delete.html:38
-#: securedrop/journalist_templates/reply.html:10
 #, python-format
 msgid "Return to the list of documents for %(codename)s..."
 msgstr "返回 %(codename)s 的文件列表⋯⋯"
@@ -518,6 +512,11 @@ msgid ""
 "source has read it, they will be asked to delete it. If it disappears from "
 "the list, then you know it has been read."
 msgstr "您現在會在文件列表看到該訊息。當線人查閱後，系統會提示他們刪除該訊息。如果訊息在文件列表消失，這就代表它已被查閱。"
+
+#: securedrop/journalist_templates/reply.html:10
+#, python-format
+msgid "Return to the list of documents for <strong>%(codename)s</strong>..."
+msgstr "返回  <strong>%(codename)s</strong> 的文件列表⋯⋯"
 
 #: securedrop/source_templates/base.html:4
 msgid "SecureDrop | Protecting Journalists and Sources"
