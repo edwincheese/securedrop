@@ -4,13 +4,13 @@
 {% if confirm_delete %}
 
   {% with count=docs_selected|length %}
-  <p class="notification">File{% if count > 1 %}s{% endif %} {{_("permanently deleted.")}}</p>
+  <p class="notification">{{ ngettext("File permanently deleted.", "Files permanently deleted.", count) }}</p>
   {% endwith %}
 
 {% else %}
 
   {% with count=docs_selected|length %}
-  <p>ngettext(u'The following file has been selected for <strong>permanent delection</strong>',u'The following %(value) files have been selected for <strong>permanent deletion</strong>', value={{count}})</p>
+  <p>{{ ngettext('The following file has been selected for <strong>permanent delection</strong>', 'The following %(value)d files have been selected for <strong>permanent deletion</strong>', count, value=count) }}</p>
   {% endwith %}
 
   <form action="/bulk" method="post">
@@ -20,9 +20,9 @@
     {{ doc.name }}
     <input type="hidden" name="doc_names_selected" value="{{ doc.name }}" />
     {% if doc.name.startswith('reply-') %}
-      ({{_("sent")}} {{ doc.date }})
+      {{_("(sent %(date)s)", date=doc.date)}}
     {% else %}
-      ({{_("uploaded"}} {{ doc.date }})
+      {{_("(uploaded %(date)s)", date=doc.date)}}
     {% endif %}
   </li>
   {% endfor %}
@@ -35,5 +35,5 @@
 
 {% endif %}
 
-<p><a href="/col/{{ sid }}">{{_("Return to the list of documents for")}} {{ codename }}...</a></p>
+<p><a href="/col/{{ sid }}">{{_("Return to the list of documents for %(codename)s...", codename=codename)}}</a></p>
 {% endblock %}

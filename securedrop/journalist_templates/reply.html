@@ -7,5 +7,5 @@
 
 <p>{{_("You will now see it in the list of documents in that collection. Once the source has read it, they will be asked to delete it. If it disappears from the list, then you know it has been read.")}}</p>
 
-<p><a href="/col/{{ sid }}">{{_("Return to the list of documents for")}} <strong>{{ codename }}</strong>...</a></p>
+<p><a href="/col/{{ sid }}">{{_("Return to the list of documents for %(codename)s...", codename="<strong>%s</strong>"|safe % codename)}}</a></p>
 {% endblock %}

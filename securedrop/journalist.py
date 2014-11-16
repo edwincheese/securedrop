@@ -7,7 +7,7 @@ import functools
 from flask import (Flask, request, render_template, send_file, redirect, flash,
                    url_for, g, abort, session)
 from flask_wtf.csrf import CsrfProtect
-from flask.ext.babel import Babel
+from flask.ext.babel import Babel, _
 from sqlalchemy.orm.exc import MultipleResultsFound, NoResultFound
 from sqlalchemy.exc import IntegrityError
 
@@ -484,7 +484,7 @@ def generate_code():
         doc.filename = store.rename_submission(g.sid, doc.filename, g.source.journalist_filename())
     db_session.commit()
 
-    flash("The source '%s' has been renamed to '%s'" % (original_journalist_designation, g.source.journalist_designation), "notification")
+    flash(_("The source '%(original_journalist_designation)s' has been renamed to '%(new_journalist_designation)s'", original_journalist_designation=original_journalist_designation, new_journalist_designation=g.source.journalist_designation), "notification")
     return redirect('/col/' + g.sid)
 
 

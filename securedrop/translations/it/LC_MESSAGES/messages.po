@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  SecureDrop\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-15 23:55+0000\n"
+"POT-Creation-Date: 2014-11-16 00:26+0000\n"
 "PO-Revision-Date: 2014-11-15 19:44+0000\n"
 "Last-Translator: gio <gdamiola@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/securedrop-"
@@ -19,6 +19,13 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
+
+#: securedrop/journalist.py:487
+#, python-format
+msgid ""
+"The source '%(original_journalist_designation)s' has been renamed to "
+"'%(new_journalist_designation)s'"
+msgstr ""
 
 #: securedrop/source.py:258
 msgid "Thanks! We received your message."
@@ -182,6 +189,11 @@ msgstr "Powered by %(securedrop)s."
 msgid "SecureDrop %(version)s"
 msgstr "SecureDrop %(version)s"
 
+#: securedrop/journalist_templates/col.html:10
+#, fuzzy
+msgid "All Sources"
+msgstr "Fonti"
+
 #: securedrop/journalist_templates/col.html:13
 msgid ""
 "Generate a new random codename for this source. We recommend doing this "
@@ -220,6 +232,16 @@ msgstr " inviato"
 #: securedrop/journalist_templates/col.html:33
 msgid " uploaded"
 msgstr " salvato"
+
+#: securedrop/journalist_templates/col.html:36
+#, fuzzy
+msgid "Uploaded Document"
+msgstr " salvato"
+
+#: securedrop/journalist_templates/col.html:38
+#, fuzzy
+msgid "Message"
+msgstr "messaggi"
 
 #: securedrop/journalist_templates/col.html:48
 msgid "No documents to display."
@@ -270,6 +292,44 @@ msgstr ""
 #: securedrop/journalist_templates/col.html:82
 msgid "Delete collection"
 msgstr "Cancella archivio"
+
+#: securedrop/journalist_templates/delete.html:7
+#, fuzzy
+msgid "File permanently deleted."
+msgid_plural "Files permanently deleted."
+msgstr[0] "Risposta cancellata"
+msgstr[1] ""
+
+#: securedrop/journalist_templates/delete.html:13
+#, python-format
+msgid ""
+"The following file has been selected for <strong>permanent "
+"delection</strong>"
+msgid_plural ""
+"The following %(value)d files have been selected for <strong>permanent "
+"deletion</strong>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: securedrop/journalist_templates/delete.html:23
+#, python-format
+msgid "(sent %(date)s)"
+msgstr ""
+
+#: securedrop/journalist_templates/delete.html:25
+#, python-format
+msgid "(uploaded %(date)s)"
+msgstr ""
+
+#: securedrop/journalist_templates/delete.html:32
+msgid "Permanently delete files"
+msgstr ""
+
+#: securedrop/journalist_templates/delete.html:38
+#: securedrop/journalist_templates/reply.html:10
+#, fuzzy, python-format
+msgid "Return to the list of documents for %(codename)s..."
+msgstr "Ritorna alla lista dei documenti per"
 
 #: securedrop/journalist_templates/flag.html:5
 msgid "Thanks!"
@@ -362,10 +422,6 @@ msgstr ""
 "Ora vedrai questo messaggio nella lista dei documenti in questo archivio."
 " Una volta che la fonte l'avrà letto gli verrà chiesto di cancellarlo. "
 "Una volta scomparso dalla lista saprai che è stato letto."
-
-#: securedrop/journalist_templates/reply.html:10
-msgid "Return to the list of documents for"
-msgstr "Ritorna alla lista dei documenti per"
 
 #: securedrop/source_templates/base.html:4
 msgid "SecureDrop | Protecting Journalists and Sources"

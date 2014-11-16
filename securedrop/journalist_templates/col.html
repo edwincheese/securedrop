@@ -7,7 +7,7 @@
     <input type="hidden" name="sid" value="{{ sid }}">
 
     <p class="breadcrumbs">
-      <a href="/">All Sources</a>
+      <a href="/">{{ _("All Sources") }}</a>
       <i class="fa fa-chevron-right"></i>
       <strong>{{ codename }}</strong>
       <button type="submit" title="{{_("Generate a new random codename for this source. We recommend doing this if the first random codename is difficult to say or remember. You can generate new random codenames as many times as you like.")}}" class="plain" id="regenerate-codename-btn"><i class="fa fa-refresh"></i> <span id="regenerate-codename-btn-label">{{_("Change codename")}}</span></button>
@@ -33,9 +33,9 @@
               <span class="info"><span title="{{ doc.size }} bytes">{{ doc.size|filesizeformat }}</span>{{_(" uploaded")}} <time title="{{ doc.date|datetimeformat }}" datetime="{{ doc.date }}">{{ doc.date|datetimeformat(relative=True) }}</time></span>
             {% endif %}
             {% if doc.name.endswith('-doc.zip.gpg') %}
-              <i title="Uploaded Document" class="fa fa-file-archive-o pull-right"></i>
+              <i title="{{ _("Uploaded Document") }}" class="fa fa-file-archive-o pull-right"></i>
             {% else %}
-              <i title="Message" class="fa fa-file-text-o pull-right"></i>
+              <i title="{{ _("Message") }}" class="fa fa-file-text-o pull-right"></i>
             {% endif %}
           </li>
         {% endfor %}
