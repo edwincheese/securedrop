@@ -120,7 +120,8 @@ def check_tor2web():
     if 'X-tor2web' in request.headers:
         flash(_('<strong>WARNING:</strong> You appear to be using Tor2Web. '
               'This <strong>does not</strong> provide anonymity. '
-              '<a href="/tor2web-warning">Why is this dangerous?</a>'),
+              '%(tor2web_warning)s',
+              tor2web_warning='<a href="/tor2web-warning">%s</a>' % _('Why is this dangerous?')),
               "banner-warning")
 
 

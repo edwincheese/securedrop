@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SecureDrop VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-16 02:59+0000\n"
+"POT-Creation-Date: 2014-11-16 18:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,27 +81,27 @@ msgstr ""
 msgid "No collections selected to download!"
 msgstr ""
 
-#: securedrop/source.py:121
+#: securedrop/source.py:124
+#, python-format
 msgid ""
 "<strong>WARNING:</strong> You appear to be using Tor2Web. This "
-"<strong>does not</strong> provide anonymity. <a href=\"/tor2web-"
-"warning\">Why is this dangerous?</a>"
+"<strong>does not</strong> provide anonymity. %(tor2web_warning)s"
 msgstr ""
 
-#: securedrop/source.py:258
+#: securedrop/source.py:259
 msgid "Thanks! We received your message."
 msgstr ""
 
-#: securedrop/source.py:263
+#: securedrop/source.py:264
 #, python-format
 msgid "Thanks! We received your document \"%(filename)s\"."
 msgstr ""
 
-#: securedrop/source.py:293
+#: securedrop/source.py:294
 msgid "Reply deleted"
 msgstr ""
 
-#: securedrop/source.py:313
+#: securedrop/source.py:314
 msgid "Sorry, that is not a recognized codename."
 msgstr ""
 
@@ -668,11 +668,7 @@ msgstr ""
 
 #: securedrop/source_templates/index.html:62
 #, python-format
-msgid "Click %(forbid_scripts_globally)s"
-msgstr ""
-
-#: securedrop/source_templates/index.html:62
-msgid "Forbid Scripts Globally (advised)"
+msgid "Click <strong>%(img)s Forbid Scripts Globally (advised)</strong>"
 msgstr ""
 
 #: securedrop/source_templates/index.html:63
@@ -722,7 +718,6 @@ msgid "Add message"
 msgstr ""
 
 #: securedrop/source_templates/lookup.html:34
-#: securedrop/source_templates/why-journalist-key.html:23
 msgid "Tip:"
 msgstr ""
 
@@ -792,7 +787,7 @@ msgstr ""
 #, python-format
 msgid ""
 "%(download)s the public key. The public key is a text file with the "
-"extension %(extension)s"
+"extension <code>.asc</code>"
 msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:7
@@ -804,18 +799,16 @@ msgid "Import it into your GPG keyring."
 msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:10
-#, python-format
 msgid ""
 "If you are using Tails (https://tails.boum.org/), you can double-click "
-"the %(extension)s file you just downloaded and it will be automatically "
-"imported to your keyring."
+"the <code>.asc</code> file you just downloaded and it will be "
+"automatically imported to your keyring."
 msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:11
-#, python-format
 msgid ""
 "If you are using Mac/Linux, open the Terminal. You can import the key "
-"with %(command)s."
+"with <code>gpg --import /path/to/key.asc</code>."
 msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:14
@@ -823,36 +816,32 @@ msgid "Encrypt your submission."
 msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:16
-#, python-format
 msgid ""
 "You will need to be able to identify the key (this is called the \"user "
 "ID\" or uid). Since the public key's filename is the key's fingerprint "
 "(with .asc at the end), you can just copy and paste that. (don't include "
-"the %(extension)s!)"
+"the <code>.asc</code>!)"
 msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:17
-#, python-format
-msgid "On all systems, open the Terminal and use this gpg command: %(command)s"
+msgid ""
+"On all systems, open the Terminal and use this gpg command: <code>gpg "
+"--recipient &lt;user ID&gt; --encrypt roswell_photos.pdf</code>"
 msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:20
-#, python-format
 msgid ""
 "Upload your encrypted submission. It will have the same filename as the "
-"unencrypted file, with .gpg at the end (e.g. %(filename)s)"
+"unencrypted file, with .gpg at the end (e.g. "
+"<code>roswell_photos.pdf.gpg</code>)"
 msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:23
-#, python-format
 msgid ""
-" If you wish to remain anonymous, %(do_not)s use GPG to sign the "
-"encrypted file (with the %(flag1)s or %(flag2)s flag) as this will reveal"
-" your GPG identity to us."
-msgstr ""
-
-#: securedrop/source_templates/why-journalist-key.html:23
-msgid "do not"
+"<strong>Tip:</strong> If you wish to remain anonymous, <strong>do "
+"not</strong> use GPG to sign the encrypted file (with the "
+"<code>--sign</code> or <code>-s</code> flag) as this will reveal your GPG"
+" identity to us."
 msgstr ""
 
 #: securedrop/source_templates/why-journalist-key.html:25
