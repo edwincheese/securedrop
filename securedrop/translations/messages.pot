@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SecureDrop VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-16 01:15+0000\n"
+"POT-Creation-Date: 2014-11-16 02:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,6 +146,7 @@ msgid "No users to display"
 msgstr ""
 
 #: securedrop/journalist_templates/admin_add_user.html:4
+#: securedrop/journalist_templates/admin_edit_user.html:4
 msgid "Back to admin interface"
 msgstr ""
 
@@ -159,6 +160,7 @@ msgid "Password (again)"
 msgstr ""
 
 #: securedrop/journalist_templates/admin_add_user.html:14
+#: securedrop/journalist_templates/admin_edit_user.html:23
 msgid "Is Administrator"
 msgstr ""
 
@@ -174,6 +176,55 @@ msgstr ""
 #: securedrop/source_templates/generate.html:39
 #: securedrop/source_templates/login.html:11
 msgid "Continue"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:3
+msgid "Edit user"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:9
+msgid "Change username"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:13
+msgid "Change password"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:15
+msgid "Leave blank for no change"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:18
+msgid "Change password (confirm)"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:25
+msgid "Update user"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:30
+msgid "Reset Two Factor Authentication"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:31
+msgid ""
+"If a user's two factor authentication credentials have been lost or "
+"compromised, you can reset them here. "
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:31
+msgid ""
+"If you do this, make sure the user is present and ready to set up their "
+"device with the new two factor credentials. Otherwise, they will be "
+"locked out of their account."
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:35
+msgid "Reset two factor authentication (Google Authenticator)"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:41
+msgid "Reset two factor authentication (HOTP Yubikey)"
 msgstr ""
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:4

@@ -1,32 +1,97 @@
-# Translations template for SecureDrop.
+# Italian translations for SecureDrop.
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the SecureDrop project.
-# 
+#
 # Translators:
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014
 # gio <gdamiola@gmail.com>, 2014
-# gio <gdamiola@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: SecureDrop\n"
+"Project-Id-Version:  SecureDrop\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-16 00:48+0000\n"
+"POT-Creation-Date: 2014-11-16 02:59+0000\n"
 "PO-Revision-Date: 2014-11-16 00:56+0000\n"
 "Last-Translator: gio <gdamiola@gmail.com>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/securedrop-app-code/language/it/)\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/securedrop-"
+"app-code/language/it/)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
-"Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: securedrop/journalist.py:487
+#: securedrop/journalist.py:127
+msgid "You must be an administrator to access that page"
+msgstr ""
+
+#: securedrop/journalist.py:144
+msgid "Login failed"
+msgstr ""
+
+#: securedrop/journalist.py:178
+msgid "Missing username"
+msgstr ""
+
+#: securedrop/journalist.py:184 securedrop/journalist.py:267
+msgid "Passwords didn't match"
+msgstr ""
+
+#: securedrop/journalist.py:202 securedrop/journalist.py:279
+msgid "That username is already in use"
+msgstr ""
+
+#: securedrop/journalist.py:205
+msgid "An error occurred saving this user to the database"
+msgstr ""
+
+#: securedrop/journalist.py:223
+#, python-format
+msgid "Two factor token successfully verified for user %(username)s!"
+msgstr ""
+
+#: securedrop/journalist.py:226
+msgid "Two factor token failed to verify"
+msgstr ""
+
+#: securedrop/journalist.py:281
+msgid "An unknown error occurred, please inform your administrator"
+msgstr ""
+
+#: securedrop/journalist.py:429
+#, python-format
+msgid "%(journalist_designation)s's collection deleted"
+msgstr ""
+
+#: securedrop/journalist.py:436 securedrop/journalist.py:514
+msgid "No collections selected to delete!"
+msgstr ""
+
+#: securedrop/journalist.py:442
+#, fuzzy, python-format
+msgid "%(cols_selected)d collection deleted"
+msgid_plural "%(cols_selected)d collections deleted"
+msgstr[0] "Cancella archivio"
+msgstr[1] ""
+
+#: securedrop/journalist.py:486
 #, python-format
 msgid ""
 "The source '%(original_journalist_designation)s' has been renamed to "
 "'%(new_journalist_designation)s'"
-msgstr "La fonte '%(original_journalist_designation)s' è stata rinominata con '%(new_journalist_designation)s'"
+msgstr ""
+"La fonte '%(original_journalist_designation)s' è stata rinominata con "
+"'%(new_journalist_designation)s'"
+
+#: securedrop/journalist.py:512
+msgid "No collections selected to download!"
+msgstr ""
+
+#: securedrop/source.py:121
+msgid ""
+"<strong>WARNING:</strong> You appear to be using Tor2Web. This "
+"<strong>does not</strong> provide anonymity. <a href=\"/tor2web-"
+"warning\">Why is this dangerous?</a>"
+msgstr ""
 
 #: securedrop/source.py:258
 msgid "Thanks! We received your message."
@@ -41,6 +106,10 @@ msgstr "Grazie! Abbiamo ricevuto il tuo documento \"%(filename)s\"."
 msgid "Reply deleted"
 msgstr "Risposta cancellata"
 
+#: securedrop/source.py:313
+msgid "Sorry, that is not a recognized codename."
+msgstr ""
+
 #: securedrop/journalist_templates/admin.html:3
 msgid "Admin Interface"
 msgstr "Interfaccia Amministrazione"
@@ -51,6 +120,7 @@ msgid "Add user"
 msgstr "Aggiungi utente"
 
 #: securedrop/journalist_templates/admin.html:16
+#: securedrop/journalist_templates/admin_add_user.html:9
 #: securedrop/journalist_templates/login.html:8
 msgid "Username"
 msgstr "Username"
@@ -81,10 +151,21 @@ msgid "No users to display"
 msgstr "Non ci sono utenti"
 
 #: securedrop/journalist_templates/admin_add_user.html:4
+#: securedrop/journalist_templates/admin_edit_user.html:4
 msgid "Back to admin interface"
 msgstr "Torna all'interfaccia di amministrazione"
 
+#: securedrop/journalist_templates/admin_add_user.html:10
+#: securedrop/journalist_templates/login.html:9
+msgid "Password"
+msgstr "Password"
+
+#: securedrop/journalist_templates/admin_add_user.html:11
+msgid "Password (again)"
+msgstr ""
+
 #: securedrop/journalist_templates/admin_add_user.html:14
+#: securedrop/journalist_templates/admin_edit_user.html:23
 msgid "Is Administrator"
 msgstr "Admin"
 
@@ -102,6 +183,59 @@ msgstr "Cambia Secret"
 msgid "Continue"
 msgstr "Continua"
 
+#: securedrop/journalist_templates/admin_edit_user.html:3
+#, fuzzy
+msgid "Edit user"
+msgstr "Aggiungi utente"
+
+#: securedrop/journalist_templates/admin_edit_user.html:9
+#, fuzzy
+msgid "Change username"
+msgstr "Cambia codename"
+
+#: securedrop/journalist_templates/admin_edit_user.html:13
+#, fuzzy
+msgid "Change password"
+msgstr "Password"
+
+#: securedrop/journalist_templates/admin_edit_user.html:15
+msgid "Leave blank for no change"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:18
+msgid "Change password (confirm)"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:25
+#, fuzzy
+msgid "Update user"
+msgstr "Aggiungi utente"
+
+#: securedrop/journalist_templates/admin_edit_user.html:30
+msgid "Reset Two Factor Authentication"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:31
+msgid ""
+"If a user's two factor authentication credentials have been lost or "
+"compromised, you can reset them here. "
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:31
+msgid ""
+"If you do this, make sure the user is present and ready to set up their "
+"device with the new two factor credentials. Otherwise, they will be "
+"locked out of their account."
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:35
+msgid "Reset two factor authentication (Google Authenticator)"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_edit_user.html:41
+msgid "Reset two factor authentication (HOTP Yubikey)"
+msgstr ""
+
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:4
 msgid "Enable Google Authenticator"
 msgstr "Abilita Google Authenticator"
@@ -110,10 +244,16 @@ msgstr "Abilita Google Authenticator"
 msgid ""
 "You're almost done! To finish adding this new user, have them follow the "
 "instructions below to set up two factor authentication with Google "
-"Authenticator. Once they've added an entry for this account in the app, have"
-" them enter one of the 6-digit codes from the app to confirm that two factor"
-" authentication is set up correctly."
-msgstr "Hai quasi terminato! Per completare il setup per questo nuovo utente, segui le istruzioni riportate qui sotto configurando l'autenticazione a due fattori con Google Authenticator. Una volta aggiunta l'entry per questo account nell'app, per confermare la corretta configurazione dell'autenticazione a due fattori si inserisca uno dei codici a 6 cifre generati dall'app."
+"Authenticator. Once they've added an entry for this account in the app, "
+"have them enter one of the 6-digit codes from the app to confirm that two"
+" factor authentication is set up correctly."
+msgstr ""
+"Hai quasi terminato! Per completare il setup per questo nuovo utente, "
+"segui le istruzioni riportate qui sotto configurando l'autenticazione a "
+"due fattori con Google Authenticator. Una volta aggiunta l'entry per "
+"questo account nell'app, per confermare la corretta configurazione "
+"dell'autenticazione a due fattori si inserisca uno dei codici a 6 cifre "
+"generati dall'app."
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:7
 msgid "Install Google Authenticator on your phone"
@@ -129,17 +269,21 @@ msgstr "Clicca menu, poi \"Set up account\" e infine \"Scan Barcode\""
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:10
 msgid ""
-"Your phone will now be in \"scanning\" mode. When you are in this mode, scan"
-" the barcode below:"
+"Your phone will now be in \"scanning\" mode. When you are in this mode, "
+"scan the barcode below:"
 msgstr "Il tuo telefono ora ora pronto per la scansione del QR code qua sotto."
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:13
 msgid "Can't scan the barcode? Enter the following code manually:"
-msgstr "Non riesci a fare la scansione del QR code? Inserisci il seguente codice manualmente:"
+msgstr ""
+"Non riesci a fare la scansione del QR code? Inserisci il seguente codice "
+"manualmente:"
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:14
 msgid "Once you have scanned the barcode, enter the 6-digit code below:"
-msgstr "Una volta fatta la scansione del QR code, inserisci il codice a 6 cifre qua sotto:"
+msgstr ""
+"Una volta fatta la scansione del QR code, inserisci il codice a 6 cifre "
+"qua sotto:"
 
 #: securedrop/journalist_templates/admin_new_user_two_factor.html:16
 msgid "Enable Yubikey [HOTP]"
@@ -187,10 +331,13 @@ msgstr "Tutte le fonti"
 
 #: securedrop/journalist_templates/col.html:13
 msgid ""
-"Generate a new random codename for this source. We recommend doing this if "
-"the first random codename is difficult to say or remember. You can generate "
-"new random codenames as many times as you like."
-msgstr "Genera un nuovo codename casuale per questa fonte. Si raccomanda di farlo nel caso il codename generato sia troppo difficile da memorizzare. Puoi generare un nuovo codename casuale quante volte vuoi."
+"Generate a new random codename for this source. We recommend doing this "
+"if the first random codename is difficult to say or remember. You can "
+"generate new random codenames as many times as you like."
+msgstr ""
+"Genera un nuovo codename casuale per questa fonte. Si raccomanda di farlo"
+" nel caso il codename generato sia troppo difficile da memorizzare. Puoi "
+"generare un nuovo codename casuale quante volte vuoi."
 
 #: securedrop/journalist_templates/col.html:13
 msgid "Change codename"
@@ -198,9 +345,11 @@ msgstr "Cambia codename"
 
 #: securedrop/journalist_templates/col.html:18
 msgid ""
-"The documents are stored encrypted for security. To read them, you will need"
-" to decrypt them using GPG."
-msgstr "I documenti sono salvati in forma criptata per ragioni di sicurezza. Per leggerli dovrai decrittarli usando GPG."
+"The documents are stored encrypted for security. To read them, you will "
+"need to decrypt them using GPG."
+msgstr ""
+"I documenti sono salvati in forma criptata per ragioni di sicurezza. Per "
+"leggerli dovrai decrittarli usando GPG."
 
 #: securedrop/journalist_templates/col.html:22
 msgid "Download selected"
@@ -238,9 +387,10 @@ msgid "Reply"
 msgstr "Rispondi"
 
 #: securedrop/journalist_templates/col.html:55
-msgid ""
-"You can write a secure reply to the person who submitted these documents:"
-msgstr "Puoi scrivere una risposta sicura alla persona che ha inviato questi documenti:"
+msgid "You can write a secure reply to the person who submitted these documents:"
+msgstr ""
+"Puoi scrivere una risposta sicura alla persona che ha inviato questi "
+"documenti:"
 
 #: securedrop/journalist_templates/col.html:64
 msgid "You've flagged this source for reply."
@@ -248,9 +398,11 @@ msgstr "Hai selezionato questa fonte per una risposta."
 
 #: securedrop/journalist_templates/col.html:65
 msgid ""
-"An encryption key will be generated for the source the next time they log "
-"in, after which you will be able to reply to the source here."
-msgstr "Una chiave crittografica sarà generata per la fonte la prossima volta che si connetterà, dopodiché potrai risponderle qui."
+"An encryption key will be generated for the source the next time they log"
+" in, after which you will be able to reply to the source here."
+msgstr ""
+"Una chiave crittografica sarà generata per la fonte la prossima volta che"
+" si connetterà, dopodiché potrai risponderle qui."
 
 #: securedrop/journalist_templates/col.html:67
 msgid "Click below if you would like to write a reply to this source."
@@ -266,9 +418,11 @@ msgstr "Clicca qui sotto per cancellare l'archivio di questa fonte."
 
 #: securedrop/journalist_templates/col.html:76
 msgid ""
-"Warning: If you do this, the files seen here will be unrecoverable and the "
-"source will no longer be able to login using their previous codename."
-msgstr "Attenzione: i seguenti files andranno perduti e la fonte non sarà più in grado di connettersi con il proprio codename."
+"Warning: If you do this, the files seen here will be unrecoverable and "
+"the source will no longer be able to login using their previous codename."
+msgstr ""
+"Attenzione: i seguenti files andranno perduti e la fonte non sarà più in "
+"grado di connettersi con il proprio codename."
 
 #: securedrop/journalist_templates/col.html:82
 msgid "Delete collection"
@@ -288,8 +442,12 @@ msgid ""
 msgid_plural ""
 "The following %(value)d files have been selected for <strong>permanent "
 "deletion</strong>"
-msgstr[0] "Il file seguente è stato selezionato per essere <strong>cancellato definitivamente</strong>"
-msgstr[1] "I file %(value)d sono stati selezionati per essere <strong>cancellati definitivamente</strong>"
+msgstr[0] ""
+"Il file seguente è stato selezionato per essere <strong>cancellato "
+"definitivamente</strong>"
+msgstr[1] ""
+"I file %(value)d sono stati selezionati per essere <strong>cancellati "
+"definitivamente</strong>"
 
 #: securedrop/journalist_templates/delete.html:23
 #, python-format
@@ -317,11 +475,15 @@ msgstr "Grazie!"
 
 #: securedrop/journalist_templates/flag.html:8
 msgid ""
-"SecureDrop will generate a secure encryption key for this source the next "
-"time that they log in. Once the key has been generated, a reply box will "
-"appear under their collection of documents. You can use this box to write "
-"encrypted replies to them."
-msgstr "SecureDrop genererà una chiave crittografica per la fonte la prossima volta che si connetterà. Una volta che la chiave è stata generate, un box di risposta apparirà sotto la collezione dei documenti. Puoi usare questo box per scrivere una risposta crittografata."
+"SecureDrop will generate a secure encryption key for this source the next"
+" time that they log in. Once the key has been generated, a reply box will"
+" appear under their collection of documents. You can use this box to "
+"write encrypted replies to them."
+msgstr ""
+"SecureDrop genererà una chiave crittografica per la fonte la prossima "
+"volta che si connetterà. Una volta che la chiave è stata generate, un box"
+" di risposta apparirà sotto la collezione dei documenti. Puoi usare "
+"questo box per scrivere una risposta crittografata."
 
 #: securedrop/journalist_templates/flag.html:10
 msgid "Continue to the list of documents for"
@@ -373,10 +535,6 @@ msgstr "Non è stato inviato nessun documento! "
 msgid "Login to access the journalist interface"
 msgstr "Login per accedere all'interfaccia giornalista"
 
-#: securedrop/journalist_templates/login.html:9
-msgid "Password"
-msgstr "Password"
-
 #: securedrop/journalist_templates/login.html:10
 msgid "Two-factor Code"
 msgstr "Codice a due fattori"
@@ -391,10 +549,13 @@ msgstr "Grazie! La tua risposta è stata salvata."
 
 #: securedrop/journalist_templates/reply.html:8
 msgid ""
-"You will now see it in the list of documents in that collection. Once the "
-"source has read it, they will be asked to delete it. If it disappears from "
-"the list, then you know it has been read."
-msgstr "A questo punto lo vedrai nella lista dei documenti in questo archivio. Una volta che la fonte l'avrà letto gli verrà chiesto di cancellarlo. Una volta scomparso dalla lista saprai che è stato letto."
+"You will now see it in the list of documents in that collection. Once the"
+" source has read it, they will be asked to delete it. If it disappears "
+"from the list, then you know it has been read."
+msgstr ""
+"A questo punto lo vedrai nella lista dei documenti in questo archivio. "
+"Una volta che la fonte l'avrà letto gli verrà chiesto di cancellarlo. Una"
+" volta scomparso dalla lista saprai che è stato letto."
 
 #: securedrop/source_templates/base.html:4
 msgid "SecureDrop | Protecting Journalists and Sources"
@@ -406,7 +567,9 @@ msgstr "SecureDrop | Protecting Journalists and Sources"
 msgid ""
 "Like all software, SecureDrop may contain security bugs. Use at your own "
 "risk. Powered by SecureDrop %(version)s."
-msgstr "Come ogni software, SecureDrop può contentere bug di sicurezza. Usalo a tuo rischio e pericolo. Powered by SecureDrop %(version)s."
+msgstr ""
+"Come ogni software, SecureDrop può contentere bug di sicurezza. Usalo a "
+"tuo rischio e pericolo. Powered by SecureDrop %(version)s."
 
 #: securedrop/source_templates/error.html:5
 msgid "Server error"
@@ -416,7 +579,9 @@ msgstr "Server error"
 msgid ""
 "Sorry, the website encountered an error and was unable to complete your "
 "request."
-msgstr "Spiacenti, si è verificato un errore ed è impossible completare la tua richiesta"
+msgstr ""
+"Spiacenti, si è verificato un errore ed è impossible completare la tua "
+"richiesta"
 
 #: securedrop/source_templates/error.html:9
 #: securedrop/source_templates/notfound.html:9
@@ -433,9 +598,11 @@ msgstr "Per proteggere la tua identità, ti verrà assegnato un codename unico."
 
 #: securedrop/source_templates/generate.html:29
 msgid ""
-"Store this code somewhere safe, or memorize it. It can be used to compromise"
-" your anonymity."
-msgstr "Questo codename può essere utilizzato per compromettere il tuo anonimato, conservalo in un luogo sicuro o imparalo a memoria."
+"Store this code somewhere safe, or memorize it. It can be used to "
+"compromise your anonymity."
+msgstr ""
+"Questo codename può essere utilizzato per compromettere il tuo anonimato,"
+" conservalo in un luogo sicuro o imparalo a memoria."
 
 #: securedrop/source_templates/generate.html:33
 msgid "Important:"
@@ -443,10 +610,14 @@ msgstr "Importante: "
 
 #: securedrop/source_templates/generate.html:33
 msgid ""
-" After you submit documents and messages, you will need this code to log in "
-"and read replies. This is the only way we can communicate back to you. You "
-"can also use your code to log in to submit more files and messages."
-msgstr "Dopo aver inviato i documenti e i messaggi, avrai bisogno di questo codice per fare login e leggere le risposte. Questo è il solo modo per poter rimanere in contatto. Potrai usare questo codice anche per inviare altri files o messaggi."
+" After you submit documents and messages, you will need this code to log "
+"in and read replies. This is the only way we can communicate back to you."
+" You can also use your code to log in to submit more files and messages."
+msgstr ""
+"Dopo aver inviato i documenti e i messaggi, avrai bisogno di questo "
+"codice per fare login e leggere le risposte. Questo è il solo modo per "
+"poter rimanere in contatto. Potrai usare questo codice anche per inviare "
+"altri files o messaggi."
 
 #: securedrop/source_templates/generate.html:40
 msgid "Already have a codename?"
@@ -458,40 +629,61 @@ msgstr "Disabilita JavaScript per proteggere il tuo anonimato:"
 
 #: securedrop/source_templates/howto-disable-js.html:6
 msgid ""
-"JavaScript is a widely used programming language for creating interactive "
-"web pages. Unfortunately, JavaScript is also the most common source of "
-"security vulnerabilities in browsers. In August 2013, the FBI wrote malware "
-"that used a JavaScript exploit to de-anonymize Tor users "
-"(http://www.wired.com/threatlevel/2013/09/freedom-hosting-fbi). JavaScript "
-"exploits are also mentioned in documents describing the NSA's Egotistical "
-"Giraffe (http://www.theguardian.com/world/interactive/2013/oct/04"
-"/egotistical-giraffe-nsa-tor-document) program, which also has the goal of "
-"targeting and de-anonymizing Tor users."
-msgstr "JavaScript è un linguaggio utilizzato per creare pagine web interattive. Sfortunatamente, JavaScript è anche la principale fonte di vulnerabilità del tuo browser. Nell'agosto 2013, l'FBI ha utilizzato JavaScript per uno malware exploit in grado di de anonimizzare gli utenti Tor (http://www.wired.com/threatlevel/2013/09/freedom-hosting-fbi). Alcuni exploit JavaScript sono menzionati anche nel programma Egotistical Giraffe dell'NSA (http://www.theguardian.com/world/interactive/2013/oct/04/egotistical-giraffe-nsa-tor-document), il cui obiettivo è de anonimizzare gli utenti Tor."
+"JavaScript is a widely used programming language for creating interactive"
+" web pages. Unfortunately, JavaScript is also the most common source of "
+"security vulnerabilities in browsers. In August 2013, the FBI wrote "
+"malware that used a JavaScript exploit to de-anonymize Tor users "
+"(http://www.wired.com/threatlevel/2013/09/freedom-hosting-fbi). "
+"JavaScript exploits are also mentioned in documents describing the NSA's "
+"Egotistical Giraffe "
+"(http://www.theguardian.com/world/interactive/2013/oct/04/egotistical-"
+"giraffe-nsa-tor-document) program, which also has the goal of targeting "
+"and de-anonymizing Tor users."
+msgstr ""
+"JavaScript è un linguaggio utilizzato per creare pagine web interattive. "
+"Sfortunatamente, JavaScript è anche la principale fonte di vulnerabilità "
+"del tuo browser. Nell'agosto 2013, l'FBI ha utilizzato JavaScript per uno"
+" malware exploit in grado di de anonimizzare gli utenti Tor "
+"(http://www.wired.com/threatlevel/2013/09/freedom-hosting-fbi). Alcuni "
+"exploit JavaScript sono menzionati anche nel programma Egotistical "
+"Giraffe dell'NSA "
+"(http://www.theguardian.com/world/interactive/2013/oct/04/egotistical-"
+"giraffe-nsa-tor-document), il cui obiettivo è de anonimizzare gli utenti "
+"Tor."
 
 #: securedrop/source_templates/howto-disable-js.html:8
 msgid ""
-"We encourage SecureDrop users to disable JavaScript to protect themselves "
-"from malware that would use it to attack their browser and potentially de-"
-"anonymize them. There are other ways to get hacked, but given the use of "
-"JavaScript-based attacks recently, we believe it is prudent to disable it at"
-" this time."
-msgstr "Incoraggiamo gli utenti di SecureDrop a disabilitare JavaScript per proteggersi da malware che potrebbero de-anonimizzarne l'attività. Esistono anche altre tecniche, ma visti i recenti attacchi basati su JavaScript riteniamo prudente disabilitarne il supporto."
+"We encourage SecureDrop users to disable JavaScript to protect themselves"
+" from malware that would use it to attack their browser and potentially "
+"de-anonymize them. There are other ways to get hacked, but given the use "
+"of JavaScript-based attacks recently, we believe it is prudent to disable"
+" it at this time."
+msgstr ""
+"Incoraggiamo gli utenti di SecureDrop a disabilitare JavaScript per "
+"proteggersi da malware che potrebbero de-anonimizzarne l'attività. "
+"Esistono anche altre tecniche, ma visti i recenti attacchi basati su "
+"JavaScript riteniamo prudente disabilitarne il supporto."
 
 #: securedrop/source_templates/howto-disable-js.html:10
 msgid ""
 "The Tor Browser comes with an add-on called NoScript that can be used to "
-"completely disable JavaScript by default, and to only enable it for sites "
-"that you trust."
-msgstr "Il Browser Tor è configurato con un add-on chiamato NoScript che può essere utilizzato per disabilitare JavaScript di default e attivarlo solo per i siti di cui ci fidiamo. "
+"completely disable JavaScript by default, and to only enable it for sites"
+" that you trust."
+msgstr ""
+"Il Browser Tor è configurato con un add-on chiamato NoScript che può "
+"essere utilizzato per disabilitare JavaScript di default e attivarlo solo"
+" per i siti di cui ci fidiamo. "
 
 #: securedrop/source_templates/howto-disable-js.html:12
 #, python-format
 msgid ""
-"To disable JavaScript in Tor Browser, click the NoScript icon %(icon)s to "
-"the left of the address bar above and choose \"Forbid Scripts Globally "
+"To disable JavaScript in Tor Browser, click the NoScript icon %(icon)s to"
+" the left of the address bar above and choose \"Forbid Scripts Globally "
 "(advised)\""
-msgstr "Per disabilitare JavaScript nel Browser Tor, clicca sull'icona NoScript %(icon)s nella barra di navigazione e seleziona \"Forbid Scripts Globally (advised)\""
+msgstr ""
+"Per disabilitare JavaScript nel Browser Tor, clicca sull'icona NoScript "
+"%(icon)s nella barra di navigazione e seleziona \"Forbid Scripts Globally"
+" (advised)\""
 
 #: securedrop/source_templates/index.html:13
 msgid "We recommend disabling JavaScript to protect your anonymity:"
@@ -512,8 +704,11 @@ msgstr "Invia i documenti per la prima volta"
 
 #: securedrop/source_templates/index.html:34
 msgid ""
-"If this is your first time submitting documents to journalists, start here."
-msgstr "Se questa è la prima volta che invii documenti ai giornalisti, comincia qui."
+"If this is your first time submitting documents to journalists, start "
+"here."
+msgstr ""
+"Se questa è la prima volta che invii documenti ai giornalisti, comincia "
+"qui."
 
 #: securedrop/source_templates/index.html:36
 msgid "Submit Documents"
@@ -525,9 +720,11 @@ msgstr "Hai già inviato qualcosa?"
 
 #: securedrop/source_templates/index.html:43
 msgid ""
-"If you have already submitted documents in the past, log in here to check "
-"for responses."
-msgstr "Se hai già inviato dei documenti in passato, fai login qui per controllare le risposte."
+"If you have already submitted documents in the past, log in here to check"
+" for responses."
+msgstr ""
+"Se hai già inviato dei documenti in passato, fai login qui per "
+"controllare le risposte."
 
 #: securedrop/source_templates/index.html:45
 msgid "Check for a response"
@@ -535,9 +732,11 @@ msgstr "Controlla le risposte"
 
 #: securedrop/source_templates/index.html:59
 msgid ""
-"You appear to be using the Tor Browser. You can disable Javascript in 3 easy"
-" steps!"
-msgstr "Sembra che tu stia usando Tor Browser. Puoi disabilitare Javascript in 3 semplici passi!"
+"You appear to be using the Tor Browser. You can disable Javascript in 3 "
+"easy steps!"
+msgstr ""
+"Sembra che tu stia usando Tor Browser. Puoi disabilitare Javascript in 3 "
+"semplici passi!"
 
 #: securedrop/source_templates/index.html:61
 #, python-format
@@ -556,8 +755,8 @@ msgstr "Disabilita gli scripts globalmente (consigliato)"
 #: securedrop/source_templates/index.html:63
 #, python-format
 msgid ""
-"If the page does not refresh automatically, %(click_here)s to refresh the "
-"page"
+"If the page does not refresh automatically, %(click_here)s to refresh the"
+" page"
 msgstr "Se la pagina non si ricarica automaticamente, %(click_here)s "
 
 #: securedrop/source_templates/index.html:63
@@ -579,9 +778,13 @@ msgstr "Inserisci il tuo codename"
 #: securedrop/source_templates/lookup.html:8
 msgid ""
 "A journalist has been waiting for you to log in again so SecureDrop can "
-"generate a crypto key for you. Now that you have logged in, they are able to"
-" write you a reply. Check back later for replies."
-msgstr "Un giornalista è in attesa che tu ti connetta nuovamente in modo che SecureDrop possa generare per te una chiave crittografica. Una volta loggato il giornalista sarà in grado di risponderti. Torna più tardi per controllare se ci sono nuove risposte."
+"generate a crypto key for you. Now that you have logged in, they are able"
+" to write you a reply. Check back later for replies."
+msgstr ""
+"Un giornalista è in attesa che tu ti connetta nuovamente in modo che "
+"SecureDrop possa generare per te una chiave crittografica. Una volta "
+"loggato il giornalista sarà in grado di risponderti. Torna più tardi per "
+"controllare se ci sono nuove risposte."
 
 #: securedrop/source_templates/lookup.html:11
 msgid "Submit documents and messages"
@@ -607,12 +810,17 @@ msgstr "Consiglio: "
 #: securedrop/source_templates/lookup.html:34
 #, python-format
 msgid ""
-" If you are already familiar with GPG, you can optionally encrypt your files"
-" and messages with our %(journalist_key)s before submission. Files are "
-"encrypted as they are received by SecureDrop; encrypting before submission "
-"provides an extra layer of security before your data reaches SecureDrop. "
-"%(why_journalist_key)s."
-msgstr "Se hai famigliarità con GPG, puoi crittare i tuoi file e messaggi prima dell'invio usando la nostra %(journalist_key)s. Normalmente i file vengono crittati una volta ricevuto da SecureDrop; crittandoli prima dell'invio aggiungerai un livello extra di sicurezza prima che i dati arrivino a SecureDrop. %(why_journalist_key)s."
+" If you are already familiar with GPG, you can optionally encrypt your "
+"files and messages with our %(journalist_key)s before submission. Files "
+"are encrypted as they are received by SecureDrop; encrypting before "
+"submission provides an extra layer of security before your data reaches "
+"SecureDrop. %(why_journalist_key)s."
+msgstr ""
+"Se hai famigliarità con GPG, puoi crittare i tuoi file e messaggi prima "
+"dell'invio usando la nostra %(journalist_key)s. Normalmente i file "
+"vengono crittati una volta ricevuto da SecureDrop; crittandoli prima "
+"dell'invio aggiungerai un livello extra di sicurezza prima che i dati "
+"arrivino a SecureDrop. %(why_journalist_key)s."
 
 #: securedrop/source_templates/lookup.html:34
 msgid "public key"
@@ -628,10 +836,14 @@ msgstr "Risposte"
 
 #: securedrop/source_templates/lookup.html:42
 msgid ""
-"You have received a reply. For your security, please delete all replies when"
-" you're done with them. This also lets us know that you have received our "
-"reply. You can respond by submitting a new message above."
-msgstr "Hai ricevuto una risposta. Per la tua sicurezza, cancella tutte le risposte non appena le avrai lette. Questo, inoltre, ci permetterà di sapere che hai letto la nostra risposta. Puoi rispondere inviando un messaggio qui sotto. "
+"You have received a reply. For your security, please delete all replies "
+"when you're done with them. This also lets us know that you have received"
+" our reply. You can respond by submitting a new message above."
+msgstr ""
+"Hai ricevuto una risposta. Per la tua sicurezza, cancella tutte le "
+"risposte non appena le avrai lette. Questo, inoltre, ci permetterà di "
+"sapere che hai letto la nostra risposta. Puoi rispondere inviando un "
+"messaggio qui sotto. "
 
 #: securedrop/source_templates/lookup.html:57
 msgid "There are no replies at this time."
@@ -655,23 +867,30 @@ msgstr "Perché scaricare la chiave pubblica del giornalista?"
 
 #: securedrop/source_templates/why-journalist-key.html:4
 msgid ""
-"SecureDrop encrypts files and messages after they are submitted. Encrypting "
-"messages and files before submission can provide an extra layer of security "
-"before your data reaches the SecureDrop server."
-msgstr "SecureDrop critta i file e i messaggi solo dopo averli ricevuti. Crittarli prima dell'invio garantisce un ulteriore livello di sicurezza prima che i tuoi dati raggiungano i server di SecureDrop."
+"SecureDrop encrypts files and messages after they are submitted. "
+"Encrypting messages and files before submission can provide an extra "
+"layer of security before your data reaches the SecureDrop server."
+msgstr ""
+"SecureDrop critta i file e i messaggi solo dopo averli ricevuti. "
+"Crittarli prima dell'invio garantisce un ulteriore livello di sicurezza "
+"prima che i tuoi dati raggiungano i server di SecureDrop."
 
 #: securedrop/source_templates/why-journalist-key.html:5
 msgid ""
-"If you are already familiar with the GPG encryption software, you may wish "
-"to encrypt your submissions yourself. To do so:"
-msgstr "Se conosci già GPG potresti voler crittare i file e il messaggio autonomamente. Per fare questo: "
+"If you are already familiar with the GPG encryption software, you may "
+"wish to encrypt your submissions yourself. To do so:"
+msgstr ""
+"Se conosci già GPG potresti voler crittare i file e il messaggio "
+"autonomamente. Per fare questo: "
 
 #: securedrop/source_templates/why-journalist-key.html:7
 #, python-format
 msgid ""
 "%(download)s the public key. The public key is a text file with the "
 "extension %(extension)s"
-msgstr "%(download)s la chiave pubblica. La chiave pubblica è un file testo con estensione %(extension)s"
+msgstr ""
+"%(download)s la chiave pubblica. La chiave pubblica è un file testo con "
+"estensione %(extension)s"
 
 #: securedrop/source_templates/why-journalist-key.html:7
 msgid "Download"
@@ -684,17 +903,22 @@ msgstr "Importala nel tuo keyring GPG"
 #: securedrop/source_templates/why-journalist-key.html:10
 #, python-format
 msgid ""
-"If you are using Tails (https://tails.boum.org/), you can double-click the "
-"%(extension)s file you just downloaded and it will be automatically imported"
-" to your keyring."
-msgstr "Se stai usando Tails (https://tails.boum.org/), clicca due volte il file %(extension)s che hai appena scaricato e sarà automaticamente importato nel tuo key ring."
+"If you are using Tails (https://tails.boum.org/), you can double-click "
+"the %(extension)s file you just downloaded and it will be automatically "
+"imported to your keyring."
+msgstr ""
+"Se stai usando Tails (https://tails.boum.org/), clicca due volte il file "
+"%(extension)s che hai appena scaricato e sarà automaticamente importato "
+"nel tuo key ring."
 
 #: securedrop/source_templates/why-journalist-key.html:11
 #, python-format
 msgid ""
-"If you are using Mac/Linux, open the Terminal. You can import the key with "
-"%(command)s."
-msgstr "Se stai usando Mac o Linux, apri un terminale. Puoi importare la chiave con il comando %(command)s."
+"If you are using Mac/Linux, open the Terminal. You can import the key "
+"with %(command)s."
+msgstr ""
+"Se stai usando Mac o Linux, apri un terminale. Puoi importare la chiave "
+"con il comando %(command)s."
 
 #: securedrop/source_templates/why-journalist-key.html:14
 msgid "Encrypt your submission."
@@ -703,32 +927,43 @@ msgstr "Critta il materiale da inviare. "
 #: securedrop/source_templates/why-journalist-key.html:16
 #, python-format
 msgid ""
-"You will need to be able to identify the key (this is called the \"user ID\""
-" or uid). Since the public key's filename is the key's fingerprint (with "
-".asc at the end), you can just copy and paste that. (don't include the "
-"%(extension)s!)"
-msgstr "Dovrai essere in grado di identificare la chiave tramite l'user ID o uid. Poichè il nome del file della chiave pubblica è anche il nome del fingerprint della stessa (con estensione .asc), puoi semplicemente fare cut&paste (non includere %(extension)s!)"
+"You will need to be able to identify the key (this is called the \"user "
+"ID\" or uid). Since the public key's filename is the key's fingerprint "
+"(with .asc at the end), you can just copy and paste that. (don't include "
+"the %(extension)s!)"
+msgstr ""
+"Dovrai essere in grado di identificare la chiave tramite l'user ID o uid."
+" Poichè il nome del file della chiave pubblica è anche il nome del "
+"fingerprint della stessa (con estensione .asc), puoi semplicemente fare "
+"cut&paste (non includere %(extension)s!)"
 
 #: securedrop/source_templates/why-journalist-key.html:17
 #, python-format
-msgid ""
-"On all systems, open the Terminal and use this gpg command: %(command)s"
-msgstr "Su tutti i sistemi operativi, apri un terminale e usa il seguente comando gpg:  %(command)s"
+msgid "On all systems, open the Terminal and use this gpg command: %(command)s"
+msgstr ""
+"Su tutti i sistemi operativi, apri un terminale e usa il seguente comando"
+" gpg:  %(command)s"
 
 #: securedrop/source_templates/why-journalist-key.html:20
 #, python-format
 msgid ""
 "Upload your encrypted submission. It will have the same filename as the "
 "unencrypted file, with .gpg at the end (e.g. %(filename)s)"
-msgstr "Fai l'upload del materiale crittato. Il file avrà lo stesso nome del file originale con l'aggiunta dell'estensione .gpg alla fine (ad esempio %(filename)s)"
+msgstr ""
+"Fai l'upload del materiale crittato. Il file avrà lo stesso nome del file"
+" originale con l'aggiunta dell'estensione .gpg alla fine (ad esempio "
+"%(filename)s)"
 
 #: securedrop/source_templates/why-journalist-key.html:23
 #, python-format
 msgid ""
-" If you wish to remain anonymous, %(do_not)s use GPG to sign the encrypted "
-"file (with the %(flag1)s or %(flag2)s flag) as this will reveal your GPG "
-"identity to us."
-msgstr "Se vuoi rimanere anonimo,  %(do_not)s usare GPG per firmare il file crittato (con i flag %(flag1)s o %(flag2)s) perché questo ci rivelerà la tua identità GPG."
+" If you wish to remain anonymous, %(do_not)s use GPG to sign the "
+"encrypted file (with the %(flag1)s or %(flag2)s flag) as this will reveal"
+" your GPG identity to us."
+msgstr ""
+"Se vuoi rimanere anonimo,  %(do_not)s usare GPG per firmare il file "
+"crittato (con i flag %(flag1)s o %(flag2)s) perché questo ci rivelerà la "
+"tua identità GPG."
 
 #: securedrop/source_templates/why-journalist-key.html:23
 msgid "do not"
@@ -737,3 +972,4 @@ msgstr "non "
 #: securedrop/source_templates/why-journalist-key.html:25
 msgid "Back to submission page"
 msgstr "Torna alla pagina di invio documenti e messaggi"
+
