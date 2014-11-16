@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SecureDrop VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-11-16 00:48+0000\n"
+"POT-Creation-Date: 2014-11-16 01:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,75 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: securedrop/journalist.py:487
+#: securedrop/journalist.py:127
+msgid "You must be an administrator to access that page"
+msgstr ""
+
+#: securedrop/journalist.py:144
+msgid "Login failed"
+msgstr ""
+
+#: securedrop/journalist.py:178
+msgid "Missing username"
+msgstr ""
+
+#: securedrop/journalist.py:184 securedrop/journalist.py:267
+msgid "Passwords didn't match"
+msgstr ""
+
+#: securedrop/journalist.py:202 securedrop/journalist.py:279
+msgid "That username is already in use"
+msgstr ""
+
+#: securedrop/journalist.py:205
+msgid "An error occurred saving this user to the database"
+msgstr ""
+
+#: securedrop/journalist.py:223
+#, python-format
+msgid "Two factor token successfully verified for user %(username)s!"
+msgstr ""
+
+#: securedrop/journalist.py:226
+msgid "Two factor token failed to verify"
+msgstr ""
+
+#: securedrop/journalist.py:281
+msgid "An unknown error occurred, please inform your administrator"
+msgstr ""
+
+#: securedrop/journalist.py:429
+#, python-format
+msgid "%(journalist_designation)s's collection deleted"
+msgstr ""
+
+#: securedrop/journalist.py:436 securedrop/journalist.py:514
+msgid "No collections selected to delete!"
+msgstr ""
+
+#: securedrop/journalist.py:442
+#, python-format
+msgid "%(cols_selected)d collection deleted"
+msgid_plural "%(cols_selected)d collections deleted"
+msgstr[0] ""
+msgstr[1] ""
+
+#: securedrop/journalist.py:486
 #, python-format
 msgid ""
 "The source '%(original_journalist_designation)s' has been renamed to "
 "'%(new_journalist_designation)s'"
+msgstr ""
+
+#: securedrop/journalist.py:512
+msgid "No collections selected to download!"
+msgstr ""
+
+#: securedrop/source.py:121
+msgid ""
+"<strong>WARNING:</strong> You appear to be using Tor2Web. This "
+"<strong>does not</strong> provide anonymity. <a href=\"/tor2web-"
+"warning\">Why is this dangerous?</a>"
 msgstr ""
 
 #: securedrop/source.py:258
@@ -37,6 +101,10 @@ msgstr ""
 msgid "Reply deleted"
 msgstr ""
 
+#: securedrop/source.py:313
+msgid "Sorry, that is not a recognized codename."
+msgstr ""
+
 #: securedrop/journalist_templates/admin.html:3
 msgid "Admin Interface"
 msgstr ""
@@ -47,6 +115,7 @@ msgid "Add user"
 msgstr ""
 
 #: securedrop/journalist_templates/admin.html:16
+#: securedrop/journalist_templates/admin_add_user.html:9
 #: securedrop/journalist_templates/login.html:8
 msgid "Username"
 msgstr ""
@@ -78,6 +147,15 @@ msgstr ""
 
 #: securedrop/journalist_templates/admin_add_user.html:4
 msgid "Back to admin interface"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_add_user.html:10
+#: securedrop/journalist_templates/login.html:9
+msgid "Password"
+msgstr ""
+
+#: securedrop/journalist_templates/admin_add_user.html:11
+msgid "Password (again)"
 msgstr ""
 
 #: securedrop/journalist_templates/admin_add_user.html:14
@@ -366,10 +444,6 @@ msgstr ""
 
 #: securedrop/journalist_templates/login.html:4
 msgid "Login to access the journalist interface"
-msgstr ""
-
-#: securedrop/journalist_templates/login.html:9
-msgid "Password"
 msgstr ""
 
 #: securedrop/journalist_templates/login.html:10

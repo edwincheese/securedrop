@@ -118,9 +118,9 @@ def check_tor2web():
         # ignore_static here so we only flash a single message warning about Tor2Web,
         # corresponding to the intial page load.
     if 'X-tor2web' in request.headers:
-        flash('<strong>WARNING:</strong> You appear to be using Tor2Web. '
+        flash(_('<strong>WARNING:</strong> You appear to be using Tor2Web. '
               'This <strong>does not</strong> provide anonymity. '
-              '<a href="/tor2web-warning">Why is this dangerous?</a>',
+              '<a href="/tor2web-warning">Why is this dangerous?</a>'),
               "banner-warning")
 
 
@@ -310,7 +310,7 @@ def login():
             if valid:
                 session.update(codename=codename, logged_in=True)
                 return redirect(url_for('lookup', from_login='1'))
-        flash("Sorry, that is not a recognized codename.", "error")
+        flash(_("Sorry, that is not a recognized codename."), "error")
     return render_template('login.html')
 
 
